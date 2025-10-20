@@ -4,234 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vibeperform</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        --accent: #6c5ce7;
-        --background-light: #f7f7ff;
-        --text-light: #1f2544;
-        --background-dark: #1b1b26;
-        --text-dark: #f8f9ff;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        line-height: 1.6;
-        background: var(--background-light);
-        color: var(--text-light);
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      body.dark {
-        background: var(--background-dark);
-        color: var(--text-dark);
-      }
-
-      header {
-        background: white;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-        padding: 18px 32px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: sticky;
-        top: 0;
-        backdrop-filter: blur(8px);
-        z-index: 10;
-      }
-
-      header h1 {
-        margin: 0;
-        font-size: 1.5rem;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--accent);
-      }
-
-      nav a {
-        margin-left: 24px;
-        text-decoration: none;
-        color: inherit;
-        font-weight: 500;
-      }
-
-      nav a:hover {
-        color: var(--accent);
-      }
-
-      main {
-        flex: 1;
-      }
-
-      .hero {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        align-items: center;
-        gap: 48px;
-        padding: 80px 10vw;
-      }
-
-      .hero-content h2 {
-        font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem);
-        margin: 0 0 16px 0;
-      }
-
-      .hero-content p {
-        font-size: 1.1rem;
-        margin-bottom: 32px;
-      }
-
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-      }
-
-      .button {
-        padding: 14px 28px;
-        border-radius: 999px;
-        border: none;
-        cursor: pointer;
-        font-size: 1rem;
-        font-weight: 600;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-
-      .button.primary {
-        background: var(--accent);
-        color: white;
-        box-shadow: 0 12px 24px rgba(108, 92, 231, 0.25);
-      }
-
-      .button.outline {
-        background: transparent;
-        color: inherit;
-        border: 2px solid currentColor;
-      }
-
-      .button:hover {
-        transform: translateY(-2px);
-      }
-
-      .feature-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 24px;
-        padding: 40px 10vw 80px 10vw;
-      }
-
-      .feature-card {
-        padding: 24px;
-        border-radius: 20px;
-        background: white;
-        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
-      }
-
-      footer {
-        background: #111827;
-        color: #e5e7eb;
-        padding: 32px 10vw;
-        text-align: center;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: var(--background-dark);
-          color: var(--text-dark);
-        }
-
-        header {
-          background: rgba(12, 12, 18, 0.8);
-          border-bottom-color: rgba(255, 255, 255, 0.12);
-        }
-
-        .feature-card {
-          background: #111827;
-          color: inherit;
-          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <h1>Vibeperform</h1>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <div class="page">
+      <header class="site-header">
+        <div class="layout site-header__inner">
+          <span class="brand">Vibeperform</span>
+          <nav class="site-nav">
+            <a href="#features">Features</a>
+            <a href="#about">Approach</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h2>Elevate Your Team's Rhythm</h2>
-          <p>
-            Vibeperform helps modern teams align, measure, and amplify their performance. Turn
-            collaboration into symphony and results into momentum.
-          </p>
-          <div class="hero-actions">
-            <button class="button primary">Get Started</button>
-            <button class="button outline">Watch Demo</button>
+      <main>
+        <section class="hero" id="top">
+          <div class="layout hero__layout">
+            <div class="hero__content">
+              <span class="eyebrow">Intuition + Impact</span>
+              <h2>Turn intuition into measurable momentum.</h2>
+              <p>
+                We blend empathetic sensing with precision AI so your organisation can move fast,
+                stay aligned, and deliver outcomes your teams feel—and your dashboards prove.
+              </p>
+              <div class="hero__actions">
+                <a class="button button--primary" href="#contact">Start the cadence</a>
+                <a class="button button--secondary" href="#about">Explore the approach</a>
+              </div>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+              <div class="hero__visual-ambient"></div>
+              <svg viewBox="0 0 420 360" role="img" aria-label="Abstract pulse graphic">
+                <defs>
+                  <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f3f1ff" />
+                    <stop offset="45%" stop-color="#6c5ce7" />
+                    <stop offset="100%" stop-color="#ff7a7c" />
+                  </linearGradient>
+                </defs>
+                <rect width="420" height="360" rx="40" fill="url(#pulseGradient)" />
+                <path
+                  d="M40 240 Q100 110, 160 180 T260 210 T340 160 T400 200"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.85)"
+                  stroke-width="14"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M30 200 Q100 150, 170 210 T270 240 T370 220"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.6)"
+                  stroke-width="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="90" cy="190" r="7" fill="#ffffff" opacity="0.9" />
+                <circle cx="210" cy="230" r="6" fill="#ffffff" opacity="0.7" />
+                <circle cx="320" cy="190" r="8" fill="#ffffff" opacity="0.8" />
+              </svg>
+            </div>
           </div>
-        </div>
-        <div class="hero-visual">
-          <svg width="100%" viewBox="0 0 400 320" role="img" aria-label="Abstract pulse graphic">
-            <defs>
-              <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#a29bfe" />
-                <stop offset="100%" stop-color="#6c5ce7" />
-              </linearGradient>
-            </defs>
-            <rect width="400" height="320" rx="32" fill="url(#pulseGradient)" />
-            <path
-              d="M40 180 Q80 80, 120 140 T200 160 T280 120 T360 140"
-              fill="none"
-              stroke="white"
-              stroke-width="12"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              opacity="0.8"
-            />
-            <path
-              d="M40 220 Q80 160, 120 210 T200 220 T280 200 T360 220"
-              fill="none"
-              stroke="rgba(255,255,255,0.6)"
-              stroke-width="8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-      </section>
+        </section>
 
-      <section id="features" class="feature-grid">
-        <article class="feature-card">
-          <h3>Insight</h3>
-          <p>Surface the signals that matter with real-time dashboards tuned to your goals.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Alignment</h3>
-          <p>Connect strategy to action and keep every contributor in sync and inspired.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Momentum</h3>
-          <p>Celebrate wins, resolve friction fast, and drive sustainable high performance.</p>
-        </article>
-      </section>
-    </main>
+        <section id="features" class="section section--lavender">
+          <div class="layout">
+            <div class="section__heading">
+              <span class="eyebrow">What we unlock</span>
+              <h3>Insight that feels human, impact that stacks up.</h3>
+              <p>
+                Every engagement bridges conversation with computation—so leaders hear the pulse,
+                teams see the path, and the metrics prove the momentum.
+              </p>
+            </div>
+            <div class="insight-grid">
+              <article class="signal-card">
+                <h4>Empathic sensing</h4>
+                <p>Decode team vibes through guided interviews enriched with AI sentiment lenses.</p>
+                <span class="data-callout">↑ 18% team NPS</span>
+              </article>
+              <article class="signal-card">
+                <h4>Strategic orchestration</h4>
+                <p>Translate intuition into roadmaps, rituals, and measurable OKRs your leaders own.</p>
+                <span class="data-callout">4-week alignment sprint</span>
+              </article>
+              <article class="signal-card">
+                <h4>Momentum dashboards</h4>
+                <p>Surface live signal-to-noise ratios with duotone analytics built for narrative.</p>
+                <span class="data-callout">92% insight adoption</span>
+              </article>
+            </div>
+          </div>
+        </section>
 
-    <footer id="contact">
-      <p>&copy; <span id="year"></span> Vibeperform. All rights reserved.</p>
-    </footer>
+        <section id="about" class="section">
+          <div class="layout about">
+            <div class="about__content">
+              <span class="eyebrow">Why Vibeperform</span>
+              <h3>We tune strategy with human sense and machine clarity.</h3>
+              <p>
+                “Vibe” brings intuition, atmosphere, and empathy. “Perform” brings disciplined
+                execution and measurable outcomes. Together, we guide your organisation to act with
+                both heart and precision.
+              </p>
+              <p>
+                From diagnostics to delivery, our consultants embed alongside your teams, pairing
+                guided workshops with intelligent copilots that keep momentum visible.
+              </p>
+            </div>
+            <div class="about__highlights">
+              <div class="about__item">
+                <strong>Hybrid intelligence labs</strong>
+                <p>Interactive sessions that surface human nuance while AI captures actionable data.</p>
+              </div>
+              <div class="about__item">
+                <strong>Cadence design</strong>
+                <p>We shape rituals, standups, and reviews that sustain rhythm without burnout.</p>
+              </div>
+              <div class="about__item">
+                <strong>Proof of traction</strong>
+                <p>Scorecards articulate the story in both narrative and numbers for every stakeholder.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section section--lavender">
+          <div class="layout hero__layout">
+            <div class="hero__content">
+              <span class="eyebrow">Ready to sync</span>
+              <h3>Start the cadence with an AI strategy session.</h3>
+              <p>
+                Share your current challenge and we will design a signal scan to reveal quick wins,
+                key risks, and which levers to pull first.
+              </p>
+            </div>
+            <div class="contact__actions">
+              <div class="hero__actions">
+                <a class="button button--primary" href="mailto:hello@vibeperform.ai">Book discovery call</a>
+                <a class="button button--secondary" href="#top">View our rhythm</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="layout footer__layout">
+          <div class="footer__brand">Vibeperform</div>
+          <div class="footer__cta">
+            <a href="#features">Features</a>
+            <a href="#about">Approach</a>
+            <a href="mailto:hello@vibeperform.ai">Contact</a>
+          </div>
+          <div class="footer__legal">&copy; <span id="year"></span> Vibeperform. All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
