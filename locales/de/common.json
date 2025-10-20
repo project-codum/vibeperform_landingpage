@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Vibeperform"
+  },
+  "nav": {
+    "brand": "Vibeperform",
+    "links": {
+      "features": "Funktionen",
+      "about": "Ansatz",
+      "contact": "Kontakt"
+    }
+  },
+  "hero": {
+    "eyebrow": "Intuition + Wirkung",
+    "headline": "Verwandle Intuition in messbare Dynamik.",
+    "body": "Wir verbinden empathisches Gespür mit präziser KI, damit Ihre Organisation schnell vorankommt, abgestimmt bleibt und Ergebnisse liefert, die Ihre Teams spüren – und Ihre Dashboards belegen.",
+    "primaryCta": "Rhythmus starten",
+    "secondaryCta": "Ansatz entdecken",
+    "visualAriaLabel": "Abstrakte Puls-Grafik"
+  },
+  "features": {
+    "eyebrow": "Was wir freisetzen",
+    "headline": "Insights mit menschlichem Gefühl, Wirkung mit messbarer Substanz.",
+    "body": "Jedes Mandat verbindet Dialog und Daten, damit Führungskräfte den Puls hören, Teams den Weg sehen und Kennzahlen das Momentum belegen.",
+    "cards": [
+      {
+        "title": "Empathisches Spüren",
+        "body": "Dekodieren Sie Team-Stimmungen durch moderierte Interviews mit KI-gestützter Sentiment-Analyse.",
+        "callout": "↑ 18 % Team-NPS"
+      },
+      {
+        "title": "Strategische Orchestrierung",
+        "body": "Übersetzen Sie Intuition in Roadmaps, Rituale und messbare OKRs, die Ihre Führungskräfte tragen.",
+        "callout": "4-wöchiger Alignment-Sprint"
+      },
+      {
+        "title": "Momentum-Dashboards",
+        "body": "Machen Sie das Signal-Rausch-Verhältnis sichtbar mit Duotone-Analytics, die Geschichten transportieren.",
+        "callout": "92 % Insight-Adoption"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Warum Vibeperform",
+    "headline": "Wir stimmen Strategie mit menschlichem Gespür und maschineller Klarheit ab.",
+    "paragraphs": [
+      "\"Vibe\" bringt Intuition, Atmosphäre und Empathie. \"Perform\" liefert disziplinierte Ausführung und messbare Ergebnisse. Gemeinsam führen wir Ihre Organisation dazu, mit Herz und Präzision zu handeln.",
+      "Von der Diagnose bis zur Umsetzung arbeiten unsere Consultants direkt mit Ihren Teams, kombinieren moderierte Workshops mit intelligenten Copiloten und halten Momentum sichtbar."
+    ],
+    "highlights": [
+      {
+        "title": "Hybrid-Intelligence-Labs",
+        "body": "Interaktive Sessions, die menschliche Nuancen freilegen, während KI verwertbare Daten erfasst."
+      },
+      {
+        "title": "Rhythmusgestaltung",
+        "body": "Wir formen Rituale, Stand-ups und Reviews, die Tempo halten ohne auszubrennen."
+      },
+      {
+        "title": "Nachweis von Momentum",
+        "body": "Scorecards erzählen jede Story in Narrativ und Zahlen für jeden Stakeholder."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Bereit zum Abgleich",
+    "headline": "Starten Sie den Rhythmus mit einer KI-Strategie-Session.",
+    "body": "Teilen Sie Ihre aktuelle Herausforderung und wir entwerfen einen Signal-Scan, der Quick Wins, Risiken und erste Hebel sichtbar macht.",
+    "primaryCta": "Discovery-Call buchen",
+    "secondaryCta": "Unseren Rhythmus ansehen"
+  },
+  "footer": {
+    "brand": "Vibeperform",
+    "links": {
+      "features": "Funktionen",
+      "about": "Ansatz",
+      "contact": "Kontakt"
+    },
+    "legal": "Vibeperform. Alle Rechte vorbehalten."
+  }
+}

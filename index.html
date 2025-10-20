@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de" data-default-lang="de">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vibeperform</title>
+    <title data-i18n="meta.title">Vibeperform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
@@ -12,11 +12,11 @@
     <div class="page">
       <header class="site-header">
         <div class="layout site-header__inner">
-          <span class="brand">Vibeperform</span>
+          <span class="brand" data-i18n="nav.brand">Vibeperform</span>
           <nav class="site-nav">
-            <a href="#features">Features</a>
-            <a href="#about">Approach</a>
-            <a href="#contact">Contact</a>
+            <a href="#features" data-i18n="nav.links.features">Features</a>
+            <a href="#about" data-i18n="nav.links.about">Approach</a>
+            <a href="#contact" data-i18n="nav.links.contact">Contact</a>
           </nav>
         </div>
       </header>
@@ -25,20 +25,20 @@
         <section class="hero" id="top">
           <div class="layout hero__layout">
             <div class="hero__content">
-              <span class="eyebrow">Intuition + Impact</span>
-              <h2>Turn intuition into measurable momentum.</h2>
-              <p>
+              <span class="eyebrow" data-i18n="hero.eyebrow">Intuition + Impact</span>
+              <h2 data-i18n="hero.headline">Turn intuition into measurable momentum.</h2>
+              <p data-i18n="hero.body">
                 We blend empathetic sensing with precision AI so your organisation can move fast,
                 stay aligned, and deliver outcomes your teams feel—and your dashboards prove.
               </p>
               <div class="hero__actions">
-                <a class="button button--primary" href="#contact">Start the cadence</a>
-                <a class="button button--secondary" href="#about">Explore the approach</a>
+                <a class="button button--primary" href="#contact" data-i18n="hero.primaryCta">Start the cadence</a>
+                <a class="button button--secondary" href="#about" data-i18n="hero.secondaryCta">Explore the approach</a>
               </div>
             </div>
             <div class="hero__visual" aria-hidden="true">
               <div class="hero__visual-ambient"></div>
-              <svg viewBox="0 0 420 360" role="img" aria-label="Abstract pulse graphic">
+              <svg viewBox="0 0 420 360" role="img" data-i18n-attr="aria-label:hero.visualAriaLabel" aria-label="Abstract pulse graphic">
                 <defs>
                   <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stop-color="#f3f1ff" />
@@ -74,28 +74,28 @@
         <section id="features" class="section section--lavender">
           <div class="layout">
             <div class="section__heading">
-              <span class="eyebrow">What we unlock</span>
-              <h3>Insight that feels human, impact that stacks up.</h3>
-              <p>
+              <span class="eyebrow" data-i18n="features.eyebrow">What we unlock</span>
+              <h3 data-i18n="features.headline">Insight that feels human, impact that stacks up.</h3>
+              <p data-i18n="features.body">
                 Every engagement bridges conversation with computation—so leaders hear the pulse,
                 teams see the path, and the metrics prove the momentum.
               </p>
             </div>
             <div class="insight-grid">
               <article class="signal-card">
-                <h4>Empathic sensing</h4>
-                <p>Decode team vibes through guided interviews enriched with AI sentiment lenses.</p>
-                <span class="data-callout">↑ 18% team NPS</span>
+                <h4 data-i18n="features.cards.0.title">Empathic sensing</h4>
+                <p data-i18n="features.cards.0.body">Decode team vibes through guided interviews enriched with AI sentiment lenses.</p>
+                <span class="data-callout" data-i18n="features.cards.0.callout">↑ 18% team NPS</span>
               </article>
               <article class="signal-card">
-                <h4>Strategic orchestration</h4>
-                <p>Translate intuition into roadmaps, rituals, and measurable OKRs your leaders own.</p>
-                <span class="data-callout">4-week alignment sprint</span>
+                <h4 data-i18n="features.cards.1.title">Strategic orchestration</h4>
+                <p data-i18n="features.cards.1.body">Translate intuition into roadmaps, rituals, and measurable OKRs your leaders own.</p>
+                <span class="data-callout" data-i18n="features.cards.1.callout">4-week alignment sprint</span>
               </article>
               <article class="signal-card">
-                <h4>Momentum dashboards</h4>
-                <p>Surface live signal-to-noise ratios with duotone analytics built for narrative.</p>
-                <span class="data-callout">92% insight adoption</span>
+                <h4 data-i18n="features.cards.2.title">Momentum dashboards</h4>
+                <p data-i18n="features.cards.2.body">Surface live signal-to-noise ratios with duotone analytics built for narrative.</p>
+                <span class="data-callout" data-i18n="features.cards.2.callout">92% insight adoption</span>
               </article>
             </div>
           </div>
@@ -104,30 +104,30 @@
         <section id="about" class="section">
           <div class="layout about">
             <div class="about__content">
-              <span class="eyebrow">Why Vibeperform</span>
-              <h3>We tune strategy with human sense and machine clarity.</h3>
-              <p>
+              <span class="eyebrow" data-i18n="about.eyebrow">Why Vibeperform</span>
+              <h3 data-i18n="about.headline">We tune strategy with human sense and machine clarity.</h3>
+              <p data-i18n="about.paragraphs.0">
                 “Vibe” brings intuition, atmosphere, and empathy. “Perform” brings disciplined
                 execution and measurable outcomes. Together, we guide your organisation to act with
                 both heart and precision.
               </p>
-              <p>
+              <p data-i18n="about.paragraphs.1">
                 From diagnostics to delivery, our consultants embed alongside your teams, pairing
                 guided workshops with intelligent copilots that keep momentum visible.
               </p>
             </div>
             <div class="about__highlights">
               <div class="about__item">
-                <strong>Hybrid intelligence labs</strong>
-                <p>Interactive sessions that surface human nuance while AI captures actionable data.</p>
+                <strong data-i18n="about.highlights.0.title">Hybrid intelligence labs</strong>
+                <p data-i18n="about.highlights.0.body">Interactive sessions that surface human nuance while AI captures actionable data.</p>
               </div>
               <div class="about__item">
-                <strong>Cadence design</strong>
-                <p>We shape rituals, standups, and reviews that sustain rhythm without burnout.</p>
+                <strong data-i18n="about.highlights.1.title">Cadence design</strong>
+                <p data-i18n="about.highlights.1.body">We shape rituals, standups, and reviews that sustain rhythm without burnout.</p>
               </div>
               <div class="about__item">
-                <strong>Proof of traction</strong>
-                <p>Scorecards articulate the story in both narrative and numbers for every stakeholder.</p>
+                <strong data-i18n="about.highlights.2.title">Proof of traction</strong>
+                <p data-i18n="about.highlights.2.body">Scorecards articulate the story in both narrative and numbers for every stakeholder.</p>
               </div>
             </div>
           </div>
@@ -136,17 +136,17 @@
         <section id="contact" class="section section--lavender">
           <div class="layout hero__layout">
             <div class="hero__content">
-              <span class="eyebrow">Ready to sync</span>
-              <h3>Start the cadence with an AI strategy session.</h3>
-              <p>
+              <span class="eyebrow" data-i18n="contact.eyebrow">Ready to sync</span>
+              <h3 data-i18n="contact.headline">Start the cadence with an AI strategy session.</h3>
+              <p data-i18n="contact.body">
                 Share your current challenge and we will design a signal scan to reveal quick wins,
                 key risks, and which levers to pull first.
               </p>
             </div>
             <div class="contact__actions">
               <div class="hero__actions">
-                <a class="button button--primary" href="mailto:hello@vibeperform.ai">Book discovery call</a>
-                <a class="button button--secondary" href="#top">View our rhythm</a>
+                <a class="button button--primary" href="mailto:hello@vibeperform.ai" data-i18n="contact.primaryCta">Book discovery call</a>
+                <a class="button button--secondary" href="#top" data-i18n="contact.secondaryCta">View our rhythm</a>
               </div>
             </div>
           </div>
@@ -155,19 +155,19 @@
 
       <footer>
         <div class="layout footer__layout">
-          <div class="footer__brand">Vibeperform</div>
+          <div class="footer__brand" data-i18n="footer.brand">Vibeperform</div>
           <div class="footer__cta">
-            <a href="#features">Features</a>
-            <a href="#about">Approach</a>
-            <a href="mailto:hello@vibeperform.ai">Contact</a>
+            <a href="#features" data-i18n="footer.links.features">Features</a>
+            <a href="#about" data-i18n="footer.links.about">Approach</a>
+            <a href="mailto:hello@vibeperform.ai" data-i18n="footer.links.contact">Contact</a>
           </div>
-          <div class="footer__legal">&copy; <span id="year"></span> Vibeperform. All rights reserved.</div>
+          <div class="footer__legal">
+            &copy; <span id="year"></span> <span data-i18n="footer.legal">Vibeperform. All rights reserved.</span>
+          </div>
         </div>
       </footer>
     </div>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="scripts/toggleLanguage.js" defer></script>
   </body>
 </html>

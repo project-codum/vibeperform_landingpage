@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Vibeperform"
+  },
+  "nav": {
+    "brand": "Vibeperform",
+    "links": {
+      "features": "Features",
+      "about": "Approach",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "eyebrow": "Intuition + Impact",
+    "headline": "Turn intuition into measurable momentum.",
+    "body": "We blend empathetic sensing with precision AI so your organisation can move fast, stay aligned, and deliver outcomes your teams feel—and your dashboards prove.",
+    "primaryCta": "Start the cadence",
+    "secondaryCta": "Explore the approach",
+    "visualAriaLabel": "Abstract pulse graphic"
+  },
+  "features": {
+    "eyebrow": "What we unlock",
+    "headline": "Insight that feels human, impact that stacks up.",
+    "body": "Every engagement bridges conversation with computation—so leaders hear the pulse, teams see the path, and the metrics prove the momentum.",
+    "cards": [
+      {
+        "title": "Empathic sensing",
+        "body": "Decode team vibes through guided interviews enriched with AI sentiment lenses.",
+        "callout": "↑ 18% team NPS"
+      },
+      {
+        "title": "Strategic orchestration",
+        "body": "Translate intuition into roadmaps, rituals, and measurable OKRs your leaders own.",
+        "callout": "4-week alignment sprint"
+      },
+      {
+        "title": "Momentum dashboards",
+        "body": "Surface live signal-to-noise ratios with duotone analytics built for narrative.",
+        "callout": "92% insight adoption"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Why Vibeperform",
+    "headline": "We tune strategy with human sense and machine clarity.",
+    "paragraphs": [
+      "“Vibe” brings intuition, atmosphere, and empathy. “Perform” brings disciplined execution and measurable outcomes. Together, we guide your organisation to act with both heart and precision.",
+      "From diagnostics to delivery, our consultants embed alongside your teams, pairing guided workshops with intelligent copilots that keep momentum visible."
+    ],
+    "highlights": [
+      {
+        "title": "Hybrid intelligence labs",
+        "body": "Interactive sessions that surface human nuance while AI captures actionable data."
+      },
+      {
+        "title": "Cadence design",
+        "body": "We shape rituals, standups, and reviews that sustain rhythm without burnout."
+      },
+      {
+        "title": "Proof of traction",
+        "body": "Scorecards articulate the story in both narrative and numbers for every stakeholder."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Ready to sync",
+    "headline": "Start the cadence with an AI strategy session.",
+    "body": "Share your current challenge and we will design a signal scan to reveal quick wins, key risks, and which levers to pull first.",
+    "primaryCta": "Book discovery call",
+    "secondaryCta": "View our rhythm"
+  },
+  "footer": {
+    "brand": "Vibeperform",
+    "links": {
+      "features": "Features",
+      "about": "Approach",
+      "contact": "Contact"
+    },
+    "legal": "Vibeperform. All rights reserved."
+  }
+}
