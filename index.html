@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title data-i18n="meta.title">Vibeperform</title>
+    <link rel="alternate" hreflang="de" href="?lang=de">
+    <link rel="alternate" hreflang="en" href="?lang=en">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
@@ -17,6 +19,31 @@
             <a href="#features" data-i18n="nav.links.features">Features</a>
             <a href="#about" data-i18n="nav.links.about">Approach</a>
             <a href="#contact" data-i18n="nav.links.contact">Contact</a>
+            <div
+              class="language-toggle"
+              role="group"
+              data-i18n-attr="aria-label:languageToggle.label"
+              aria-label="Language"
+            >
+              <button
+                type="button"
+                class="language-toggle__button"
+                data-lang-option="de"
+                data-i18n="languageToggle.options.de"
+                aria-pressed="false"
+              >
+                DE
+              </button>
+              <button
+                type="button"
+                class="language-toggle__button"
+                data-lang-option="en"
+                data-i18n="languageToggle.options.en"
+                aria-pressed="false"
+              >
+                EN
+              </button>
+            </div>
           </nav>
         </div>
       </header>
@@ -168,6 +195,7 @@
       </footer>
     </div>
 
+    <script src="scripts/locales-inline.js"></script>
     <script src="scripts/toggleLanguage.js" defer></script>
   </body>
 </html>

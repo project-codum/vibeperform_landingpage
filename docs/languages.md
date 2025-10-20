@@ -35,18 +35,23 @@ vibeperform_landingpage/
    - Handle fallback logic: if a key is missing, log a console warning and default to English.
 
 4. **Add Language Toggle UI**  
-   - Place a toggle control in the header (e.g. two-button switch or dropdown) and hook it to `toggleLanguage.js`.  
-   - Persist the chosen language to `localStorage` and re-apply the locale immediately on switch.
+   - Render the two-button toggle inside the header nav (`.language-toggle`) so it sits alongside the anchor links.  
+   - Use `data-lang-option` attributes to wire each button to `toggleLanguage.js`; translations for labels live under `languageToggle.*` in the locale JSON.  
+   - Persist the chosen language to `localStorage` and reflect the active choice via `aria-pressed` so assistive tech understands which language is live.
 
 5. **Update Metadata & Accessibility**  
-   - Dynamically set `<html lang="...">` and `<title>` via the locale data.  
-   - Confirm all aria labels and accessible names are localized.  
-   - Provide `hreflang` links if a second URL per language is introduced later.
+   - Let `toggleLanguage.js` set `<html lang="…">`, `<title>` (via the `meta.title` key), and keep the copyright year.
+   - Keep aria labels and accessible names localized through `data-i18n-attr` hooks (e.g. hero SVG label, language toggle group label).  
+   - Publish `<link rel="alternate" hreflang="…">` entries pointing at `?lang=de` / `?lang=en` for search engines; expand as needed if dedicated routes arrive.
 
 6. **Quality Gates**  
-   - Create a simple lint script (Node or shell) to compare JSON keys between `en` and `de` to prevent missing translations.  
-   - Add a manual QA checklist to verify both languages render correctly, including date/number formats and mailto subjects if added.  
-   - Document regression steps in `docs/main.md` once the feature ships.
+   - Run `node scripts/checkLocales.js` to verify every locale mirrors the English key structure before merging.  
+   - Manual QA checklist:  
+     * Load `index.html?lang=de` and `?lang=en`; confirm headers, hero, cards, footer copy, and aria labels match the intended language.  
+     * Flip the toggle in-browser and ensure the choice persists on reload (inspect `localStorage`).  
+     * Sanity-check date/number formatting (e.g. `%` spacing) and mailto links for both locales.  
+   - Run `node scripts/bootstrapLocales.js` after updating JSON files so `scripts/locales-inline.js` stays in sync.  
+   - Regression note added to `docs/main.md` so releases include a bilingual smoke test.
 
 ## Maintenance Tips
 

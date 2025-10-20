@@ -2,6 +2,13 @@
   "meta": {
     "title": "Vibeperform"
   },
+  "languageToggle": {
+    "label": "Sprache",
+    "options": {
+      "de": "DE",
+      "en": "EN"
+    }
+  },
   "nav": {
     "brand": "Vibeperform",
     "links": {
