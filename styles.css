@@ -704,6 +704,142 @@ footer {
   font-weight: 600;
 }
 
+/* About page */
+.about-page__intro {
+  grid-column: span 6;
+  display: grid;
+  gap: clamp(16px, 3vw, 28px);
+}
+
+.about-page__intro h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.4rem);
+}
+
+.about-page__tagline {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.4vw + 0.95rem, 1.35rem);
+  color: rgba(12, 16, 36, 0.76);
+}
+
+.about-page__summary {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.1vw + 0.95rem, 1.2rem);
+  color: rgba(12, 16, 36, 0.72);
+  max-width: 60ch;
+}
+
+.about-page__principles {
+  grid-column: span 6;
+  display: grid;
+  gap: clamp(16px, 3vw, 24px);
+  align-content: start;
+}
+
+.about-page__principles h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 1.4vw + 1rem, 2rem);
+}
+
+.principles-list {
+  grid-column: span 6;
+  display: grid;
+  gap: clamp(12px, 2vw, 20px);
+  padding: clamp(24px, 4vw, 32px);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(108, 92, 231, 0.14);
+  box-shadow: var(--shadow-soft);
+  list-style: none;
+  margin: 0;
+}
+
+.principles-list li {
+  font-size: 1rem;
+  color: rgba(12, 16, 36, 0.74);
+  position: relative;
+  padding-left: 26px;
+}
+
+.principles-list li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-purple), var(--color-coral));
+  box-shadow: 0 0 12px rgba(108, 92, 231, 0.35);
+}
+
+.team-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(20px, 4vw, 32px);
+}
+
+.team-section__header {
+  grid-column: 1 / -1;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.team-section__header h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 2.6vw + 1rem, 3rem);
+}
+
+.team-card {
+  display: grid;
+  gap: clamp(14px, 2vw, 20px);
+  padding: clamp(24px, 4vw, 32px);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(108, 92, 231, 0.12);
+  box-shadow: var(--shadow-soft);
+}
+
+.team-card__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.18), rgba(255, 122, 124, 0.2));
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--color-purple);
+}
+
+.team-card__content {
+  display: grid;
+  gap: 10px;
+}
+
+.team-card__content h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 1.2vw + 1rem, 1.7rem);
+}
+
+.team-card__role {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-graphite);
+}
+
+.team-card__bio {
+  margin: 0;
+  color: rgba(12, 16, 36, 0.72);
+}
+
 @keyframes pulseGlow {
   0%,
   100% {
@@ -737,7 +873,11 @@ footer {
   .footer__brand,
   .footer__cta,
   .workshop-card,
-  .workshops-cta__content {
+  .workshops-cta__content,
+  .about-page__intro,
+  .about-page__principles,
+  .principles-list,
+  .team-section__header {
     grid-column: 1 / -1;
   }
 
@@ -752,5 +892,9 @@ footer {
 
   .footer__cta {
     justify-self: start;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }

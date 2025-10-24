@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de" data-default-lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="meta.title">Vibeperform</title>
+    <link rel="alternate" hreflang="de" href="?lang=de">
+    <link rel="alternate" hreflang="en" href="?lang=en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="layout site-header__inner">
+          <a class="brand" href="index.html" data-i18n="nav.brand">Vibeperform</a>
+          <nav class="site-nav">
+            <a href="index.html#section-1">Overview</a>
+            <a href="index.html#section-2">Approach</a>
+            <a href="index.html#section-3">What we deliver</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="index.html#get-in-touch">Get in touch</a>
+            <div
+              class="language-toggle"
+              role="group"
+              data-i18n-attr="aria-label:languageToggle.label"
+              aria-label="Language"
+            >
+              <button
+                type="button"
+                class="language-toggle__button"
+                data-lang-option="de"
+                data-i18n="languageToggle.options.de"
+                aria-pressed="false"
+              >
+                DE
+              </button>
+              <button
+                type="button"
+                class="language-toggle__button"
+                data-lang-option="en"
+                data-i18n="languageToggle.options.en"
+                aria-pressed="false"
+              >
+                EN
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="section hero-section">
+          <div class="layout hero-section__layout">
+            <div class="hero-section__content">
+              <h1>Performing systems, good vibes.</h1>
+              <p>We are a lean, founder-led team helping ambitious people launch smart and scale fast.</p>
+              <p>VibePerform combines brand, design, and AI so you can go from idea to reality without losing momentum.</p>
+            </div>
+            <aside class="hero-section__aside">
+              <div class="visual-card">
+                <span class="visual-card__label">Visual cue</span>
+                <p>Two founders mapping ideas on a bright canvas, surrounded by flowing lines that represent brand, design, and AI converging.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section about-page-overview">
+          <div class="layout">
+            <div class="about-page__intro">
+              <h1>About us</h1>
+              <p class="about-page__tagline">Performing systems, good vibes.</p>
+              <p class="about-page__summary">VibePerform is a lean, founder-led team helping ambitious teams and entrepreneurs launch new ideas fast and scale smart.</p>
+              <p class="about-page__summary">With a trusted crew of freelancers, we become your embedded team for <strong>brand, design, and AI</strong>.</p>
+            </div>
+
+            <article class="about-page__principles">
+              <h2>How we work</h2>
+              <ul class="principles-list">
+                <li>Small, senior, and fast.</li>
+                <li>Clear roles. Tight feedback loops.</li>
+                <li>Product thinking meets crisp communication.</li>
+                <li>Tools that serve humans — not the other way around.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section about-team">
+          <div class="layout">
+            <header class="team-section__header">
+              <h1>Team</h1>
+            </header>
+            <div class="team-grid">
+              <article class="team-card">
+                <div class="team-card__avatar" aria-hidden="true">IH</div>
+                <div class="team-card__content">
+                  <h2>Isabella Hoesch</h2>
+                  <p class="team-card__role">Product &amp; Design</p>
+                  <p class="team-card__bio">Isabella helps early-stage ideas find form — fast. With a background in behavioral science and human-centered design, she brings clarity, calm, and momentum to messy moments like landing pages, presentations, and strategies.</p>
+                  <p class="team-card__bio">Previously co-founder at Codum, she now works with teams and founders to turn vision into intuitive products, championing smart tools, rapid feedback, and pragmatic delivery.</p>
+                </div>
+              </article>
+
+              <article class="team-card">
+                <div class="team-card__avatar" aria-hidden="true">MD</div>
+                <div class="team-card__content">
+                  <h2>Marlon Dietrich</h2>
+                  <p class="team-card__role">AI &amp; Automation</p>
+                  <p class="team-card__bio">Marlon is our go-to for AI and workflow automation. With a software engineering background and a sharp eye for efficient systems, he turns complex challenges into useful tools.</p>
+                  <p class="team-card__bio">He believes in progress for everyone and builds technology that frees people from repetitive tasks, making the current technological revolution useful and accessible for teams of all sizes.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="layout footer__layout">
+          <div class="footer__brand" data-i18n="footer.brand">Vibeperform</div>
+          <div class="footer__cta">
+            <a href="index.html#section-2">Approach</a>
+            <a href="index.html#section-3">What we deliver</a>
+            <a href="index.html#get-in-touch">Get in touch</a>
+          </div>
+          <div class="footer__legal">
+            &copy; <span id="year"></span> <span data-i18n="footer.legal">Vibeperform. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/locales-inline.js"></script>
+    <script src="scripts/toggleLanguage.js" defer></script>
+    <script src="scripts/accordion.js" defer></script>
+
+    <iframe
+      src="https://viebeperform-chatbot1-76728983516.europe-west4.run.app/"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 400px;
+        height: 600px;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        z-index: 9999;
+      "
+      title="Innovate AI Assistant"
+    ></iframe>
+  </body>
+</html>
