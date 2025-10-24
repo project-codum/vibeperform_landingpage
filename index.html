@@ -10,46 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="index">
     <div class="page">
-      <header class="site-header">
-        <div class="layout site-header__inner">
-          <span class="brand" data-i18n="nav.brand">Vibeperform</span>
-          <nav class="site-nav">
-            <a href="#section-1">Overview</a>
-            <a href="#section-2">Approach</a>
-            <a href="#section-3">What we deliver</a>
-            <a href="workshops.html">Workshops</a>
-            <a href="about.html">About</a>
-            <a href="#get-in-touch">Get in touch</a>
-            <div
-              class="language-toggle"
-              role="group"
-              data-i18n-attr="aria-label:languageToggle.label"
-              aria-label="Language"
-            >
-              <button
-                type="button"
-                class="language-toggle__button"
-                data-lang-option="de"
-                data-i18n="languageToggle.options.de"
-                aria-pressed="false"
-              >
-                DE
-              </button>
-              <button
-                type="button"
-                class="language-toggle__button"
-                data-lang-option="en"
-                data-i18n="languageToggle.options.en"
-                aria-pressed="false"
-              >
-                EN
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <div data-component="site-header"></div>
 
       <main>
         <section id="section-1" class="section hero-section">
@@ -236,6 +199,7 @@
 
     <script src="scripts/locales-inline.js"></script>
     <script src="scripts/toggleLanguage.js" defer></script>
+    <script src="scripts/siteHeader.js" defer></script>
     <script src="scripts/accordion.js" defer></script>
 
     <!-- Embedded AI assistant widget fixed to the viewport -->

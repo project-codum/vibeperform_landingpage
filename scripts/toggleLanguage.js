@@ -124,6 +124,27 @@ function wireLanguageToggle() {
   });
 }
 
+document.addEventListener("component:site-header-ready", () => {
+  wireLanguageToggle();
+
+  if (activeLocale) {
+    applyLocale(activeLocale);
+    return;
+  }
+
+  let attempts = 0;
+  const MAX_ATTEMPTS = 10;
+
+  (function ensureLocaleReady() {
+    if (activeLocale) {
+      applyLocale(activeLocale);
+    } else if (attempts < MAX_ATTEMPTS) {
+      attempts += 1;
+      window.setTimeout(ensureLocaleReady, 50);
+    }
+  })();
+});
+
 async function applyLocale(locale) {
   const primaryData = (await loadLocaleData(locale)) || null;
   const fallbackData =

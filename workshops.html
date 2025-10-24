@@ -10,45 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-page="workshops">
     <div class="page">
-      <header class="site-header">
-        <div class="layout site-header__inner">
-          <a class="brand" href="index.html" data-i18n="nav.brand">Vibeperform</a>
-          <nav class="site-nav">
-            <a href="index.html#section-1">Overview</a>
-            <a href="index.html#section-2">Approach</a>
-            <a href="index.html#section-3">What we deliver</a>
-            <a href="workshops.html" aria-current="page">Workshops</a>
-            <a href="index.html#get-in-touch">Get in touch</a>
-            <div
-              class="language-toggle"
-              role="group"
-              data-i18n-attr="aria-label:languageToggle.label"
-              aria-label="Language"
-            >
-              <button
-                type="button"
-                class="language-toggle__button"
-                data-lang-option="de"
-                data-i18n="languageToggle.options.de"
-                aria-pressed="false"
-              >
-                DE
-              </button>
-              <button
-                type="button"
-                class="language-toggle__button"
-                data-lang-option="en"
-                data-i18n="languageToggle.options.en"
-                aria-pressed="false"
-              >
-                EN
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <div data-component="site-header"></div>
 
       <main>
         <section class="section hero-section">
@@ -152,6 +116,7 @@
 
     <script src="scripts/locales-inline.js"></script>
     <script src="scripts/toggleLanguage.js" defer></script>
+    <script src="scripts/siteHeader.js" defer></script>
     <script src="scripts/accordion.js" defer></script>
 
     <iframe
