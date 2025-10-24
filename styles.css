@@ -613,6 +613,97 @@ footer {
   color: rgba(255, 255, 255, 0.55);
 }
 
+/* Workshops page */
+.workshops-list__intro {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: clamp(12px, 2vw, 20px);
+}
+
+.workshops-list__intro h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw + 1rem, 3.2rem);
+}
+
+.workshops-list__intro p {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.2vw + 0.95rem, 1.2rem);
+  color: rgba(12, 16, 36, 0.72);
+}
+
+.workshop-card {
+  grid-column: span 6;
+  display: grid;
+  gap: clamp(12px, 2vw, 20px);
+  padding: clamp(20px, 3vw, 28px);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(108, 92, 231, 0.12);
+  box-shadow: var(--shadow-soft);
+}
+
+.workshop-card h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 1.2vw + 1rem, 1.7rem);
+}
+
+.workshop-card__meta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  color: rgba(12, 16, 36, 0.75);
+}
+
+.workshop-card__meta li {
+  line-height: 1.5;
+}
+
+.workshop-card__meta strong {
+  font-weight: 600;
+  color: var(--color-graphite);
+}
+
+.workshop-card__link {
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
+.workshops-cta__layout {
+  align-items: center;
+}
+
+.workshops-cta__content {
+  grid-column: span 8;
+  display: grid;
+  gap: clamp(14px, 3vw, 22px);
+  padding: clamp(24px, 4vw, 36px);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.12), rgba(255, 122, 124, 0.12));
+  border: 1px solid rgba(108, 92, 231, 0.14);
+  box-shadow: var(--shadow-soft);
+}
+
+.workshops-cta__content h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.4rem);
+}
+
+.workshops-cta__content p {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.1vw + 0.95rem, 1.2rem);
+  color: rgba(12, 16, 36, 0.8);
+}
+
+.workshops-cta__content a {
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
 @keyframes pulseGlow {
   0%,
   100% {
@@ -644,7 +735,9 @@ footer {
   .about-section__panel,
   .requests__header,
   .footer__brand,
-  .footer__cta {
+  .footer__cta,
+  .workshop-card,
+  .workshops-cta__content {
     grid-column: 1 / -1;
   }
 
