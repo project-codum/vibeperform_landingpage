@@ -17,5 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
+
+    const panelId = toggle.getAttribute("aria-controls");
+    const panel = panelId ? document.getElementById(panelId) : null;
+    if (panel && toggle.getAttribute("aria-expanded") !== "true") {
+      panel.setAttribute("hidden", "");
+    }
   });
 });

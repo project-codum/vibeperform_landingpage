@@ -43,7 +43,8 @@
     const activePage = document.body ? document.body.dataset.page : null;
     if (!activePage) return;
     root.querySelectorAll("[data-nav-page]").forEach((link) => {
-      if (link.dataset.navPage === activePage) {
+      const isActive = link.dataset.navPage === activePage;
+      if (isActive) {
         link.setAttribute("aria-current", "page");
       } else {
         link.removeAttribute("aria-current");
@@ -96,6 +97,13 @@
   async function loadSiteHeader() {
     const placeholders = Array.from(document.querySelectorAll('[data-component="site-header"]'));
     if (!placeholders.length) {
+      const existingHeaders = Array.from(document.querySelectorAll("header.site-header"));
+      if (existingHeaders.length) {
+        existingHeaders.forEach((header) => applyActiveNavState(header));
+        document.dispatchEvent(
+          new CustomEvent("component:site-header-ready", { detail: { elements: existingHeaders } })
+        );
+      }
       return;
     }
 

@@ -1,10 +1,10 @@
 # Languages Feature
 
-We want to support English and German with German as the default language. The site keeps a single HTML shell; locale-specific copy resides in JSON files that the client loads and applies at runtime via `toggleLanguage.js`.
+We ship English and German with English rendered as the default/static markup. Locale-specific copy now spans all three public pages (home, workshops, about) and metadata strings. Content lives in JSON files that `toggleLanguage.js` applies client-side.
 
 ## Folder Layout
 
-```
+```txt
 vibeperform_landingpage/
   index.html
   styles.css
@@ -20,38 +20,38 @@ vibeperform_landingpage/
 ## Implementation Checklist
 
 1. **Extract copy into JSON**  
-   - Inventory all user-facing strings (headings, paragraphs, buttons, aria labels) in `index.html`.  
-   - Create `locales/en/common.json` with a nested structure reflecting the page sections.  
-   - Duplicate the file to `locales/de/common.json` and translate values while keeping the same keys.
+   - Inventory user-facing strings (headings, paragraphs, buttons, aria labels) in `index.html`, `workshops.html`, and `about.html`.  
+   - Populate `locales/en/common.json` using the established nested structure (`home`, `workshopsPage`, `aboutPage`, `meta`, `chatbot`, etc.).  
+   - Mirror every key in `locales/de/common.json` with translated values.
 
 2. **Wire placeholders into HTML**  
-   - Replace hardcoded text nodes in `index.html` with elements carrying `data-i18n` attributes (e.g. `<span data-i18n="nav.links.features"></span>`).  
-   - Ensure attributes like `aria-label` and button text can also be populated via script (use `data-i18n-attr="aria-label:hero.visualAriaLabel"` conventions or similar).
+   - Ensure all three HTML pages use `data-i18n` or `data-i18n-html` hooks for text nodes. Use `data-i18n-html` when markup (e.g. `<strong>`) must be preserved.  
+   - Keep attribute localisation via `data-i18n-attr` (example: the language toggle `aria-label`).  
+   - Navigation is now rendered statically on each page (no JS fetch required) so crawlers see links without executing JavaScript.
 
 3. **Implement `toggleLanguage.js`**  
-   - On load, determine the active locale (`localStorage`, URL query, or browser default fallback to `de`).  
-   - Fetch the matching JSON file from `/locales/{lang}/common.json`.  
-   - Traverse DOM elements with `data-i18n` (and attribute hooks) to inject the localized strings.  
-   - Handle fallback logic: if a key is missing, log a console warning and default to English.
+   - Language detection order: `?lang=`, `localStorage`, document `data-default-lang`, browser language (fallback to English).  
+   - The script now updates page-level metadata (`<title>`, `<meta name="description">`, Open Graph and Twitter tags) based on `meta.{page}` keys.  
+   - `data-i18n-html` nodes are rewritten via `innerHTML`, while `data-i18n` nodes still use textContent to avoid accidental markup injection.  
+   - Fallback logic still warns and reuses English if a key is missing.
 
-4. **Add Language Toggle UI**  
-   - Render the two-button toggle inside the header nav (`.language-toggle`) so it sits alongside the anchor links.  
-   - Use `data-lang-option` attributes to wire each button to `toggleLanguage.js`; translations for labels live under `languageToggle.*` in the locale JSON.  
-   - Persist the chosen language to `localStorage` and reflect the active choice via `aria-pressed` so assistive tech understands which language is live.
+4. **Language Toggle UI**  
+   - The toggle is duplicated statically in each page header and upgraded by `toggleLanguage.js`.  
+   - Buttons carry `data-lang-option` values and update `aria-pressed` automatically.  
+   - The chatbot trigger button also receives a `chatbot.trigger` key so both languages can customise the call-to-action.
 
-5. **Update Metadata & Accessibility**  
-   - Let `toggleLanguage.js` set `<html lang="…">`, `<title>` (via the `meta.title` key), and keep the copyright year.
-   - Keep aria labels and accessible names localized through `data-i18n-attr` hooks (e.g. hero SVG label, language toggle group label).  
-   - Publish `<link rel="alternate" hreflang="…">` entries pointing at `?lang=de` / `?lang=en` for search engines; expand as needed if dedicated routes arrive.
+5. **Metadata & Accessibility**  
+   - `toggleLanguage.js` sets `<html lang>` plus the canonical title/description/OG/Twitter strings per page.  
+   - `<link rel="alternate" hreflang="…">` entries point at query-parameter variants until dedicated routes exist.  
+   - Accordion answers render visible by default (no `hidden` attribute) so crawlers index the copy even without JavaScript; the script re-applies hiding for interactive sessions.
 
 6. **Quality Gates**  
-   - Run `node scripts/checkLocales.js` to verify every locale mirrors the English key structure before merging.  
+   - Run `node scripts/checkLocales.js` to verify parity before merging.  
    - Manual QA checklist:  
-     * Load `index.html?lang=de` and `?lang=en`; confirm headers, hero, cards, footer copy, and aria labels match the intended language.  
-     * Flip the toggle in-browser and ensure the choice persists on reload (inspect `localStorage`).  
-     * Sanity-check date/number formatting (e.g. `%` spacing) and mailto links for both locales.  
-   - Run `node scripts/bootstrapLocales.js` after updating JSON files so `scripts/locales-inline.js` stays in sync.  
-   - Regression note added to `docs/main.md` so releases include a bilingual smoke test.
+     * Load each page with `?lang=de`/`?lang=en`; confirm copy, CTA buttons, chat trigger, and metadata reflect the locale.  
+     * Flip the toggle and reload to verify persistence.  
+     * Validate sitemap/robots entries still reference the correct URLs.  
+   - Run `node scripts/bootstrapLocales.js` after updating JSON so `scripts/locales-inline.js` stays current.
 
 ## Maintenance Tips
 

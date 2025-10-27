@@ -1,36 +1,157 @@
 <!DOCTYPE html>
-<html lang="de" data-default-lang="de">
+<html lang="en" data-default-lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title data-i18n="meta.title">Vibeperform</title>
-    <link rel="alternate" hreflang="de" href="?lang=de">
-    <link rel="alternate" hreflang="en" href="?lang=en">
+    <title>Vibeperform | AI-Led Brand, Web &amp; Automation Studio</title>
+    <meta
+      name="description"
+      content="Vibeperform moves ideas to impact fast with brand strategy, lightning-fast landing pages, and AI-powered automation for startups and SMEs."
+    >
+    <link rel="canonical" href="https://www.vibeperform.com/">
+    <link rel="alternate" hreflang="en" href="https://www.vibeperform.com/">
+    <link rel="alternate" hreflang="de" href="https://www.vibeperform.com/?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://www.vibeperform.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vibeperform | AI-Led Brand, Web &amp; Automation Studio">
+    <meta
+      property="og:description"
+      content="From idea to impact fast. Partner with Vibeperform for sharp brand design, web experiences, and AI automation tailored to your next launch."
+    >
+    <meta property="og:url" content="https://www.vibeperform.com/">
+    <meta property="og:image" content="https://www.vibeperform.com/assets/social/vibeperform-og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vibeperform | AI-Led Brand, Web &amp; Automation Studio">
+    <meta
+      name="twitter:description"
+      content="From idea to impact fast. Partner with Vibeperform for sharp brand design, web experiences, and AI automation."
+    >
+    <meta name="twitter:image" content="https://www.vibeperform.com/assets/social/vibeperform-og.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@500;600;700&display=swap"
+      as="style"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@500;600;700&display=swap"
+    >
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Vibeperform",
+        "url": "https://www.vibeperform.com/",
+        "logo": "https://www.vibeperform.com/assets/social/vibeperform-og.png"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "We need a landing page, a pitch deck and a basic brand — in 5 days.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We specialize in fast, high-impact branding for early-stage startups and projects. Within days, we help you launch a clean landing page, build a sharp pitch deck, and define your visual identity — logo, colors, typography, and tone of voice. Whether you are preparing for investor conversations or a public beta, our pitch deck support and brand setup get you from zero to ready, fast."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "We need expert consulting on our tech stack before we start hiring/building.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choosing the right tech stack is critical in the early stages of any startup project. We provide tech stack consulting tailored to your product vision, use case, and team structure. Whether you are building a no-code MVP or scaling with custom APIs, we guide you in selecting the tools and infrastructure that save time and grow with you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "We want to build an AI copilot to support us / our clients in XYZ.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We design and develop AI copilots that integrate into your internal tools or client-facing platforms. Using agentic workflows, LLM APIs, and automation tools, we help you create smart assistants tailored to your use case — from internal process support to external user engagement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can we automate this manual process?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. We identify automation opportunities within your current workflows and implement custom solutions using tools like Zapier, Make, or n8n. From email sequences to lead qualification to internal approvals — if it is manual and repetitive, we can probably automate it."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body data-page="index">
     <div class="page">
-      <div data-component="site-header"></div>
+      <header class="site-header">
+        <div class="layout site-header__inner">
+          <a class="brand" href="index.html" data-i18n="nav.brand">Vibeperform</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" data-nav-page="index" aria-current="page" data-i18n="nav.links.overview">Overview</a>
+            <a href="workshops.html" data-nav-page="workshops" data-i18n="nav.links.workshops">Workshops</a>
+            <a href="about.html" data-nav-page="about" data-i18n="nav.links.about">About</a>
+            <div
+              class="language-toggle"
+              role="group"
+              data-i18n-attr="aria-label:languageToggle.label"
+              aria-label="Language"
+            >
+              <button
+                type="button"
+                class="language-toggle__button"
+                data-lang-option="de"
+                data-i18n="languageToggle.options.de"
+                aria-pressed="false"
+              >
+                DE
+              </button>
+              <button
+                type="button"
+                class="language-toggle__button"
+                data-lang-option="en"
+                data-i18n="languageToggle.options.en"
+                aria-pressed="true"
+              >
+                EN
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
 
       <main>
         <section id="section-1" class="section hero-section">
           <div class="layout hero-section__layout">
             <div class="hero-section__content">
-              <h1>From idea to impact. Fast.</h1>
-              <p>Move from zero to clarity &mdash; with smart brand design, fast tech, and AI-powered workflows.</p>
-              <p>Your sparring partners in <strong>brand, web &amp; automation</strong>.</p>
+              <h1 data-i18n="home.hero.title">From idea to impact. Fast.</h1>
+              <p data-i18n="home.hero.subtitle">
+                Move from zero to clarity &mdash; with smart brand design, fast tech, and AI-powered workflows.
+              </p>
+              <p data-i18n-html="home.hero.supporting">
+                Your sparring partners in <strong>brand, web &amp; automation</strong>.
+              </p>
               <ul class="chip-list" aria-label="Focus areas">
-                <li>Brand</li>
-                <li>Web</li>
-                <li>Automation</li>
+                <li data-i18n="home.hero.tags.brand">Brand</li>
+                <li data-i18n="home.hero.tags.web">Web</li>
+                <li data-i18n="home.hero.tags.automation">Automation</li>
               </ul>
             </div>
             <aside class="hero-section__aside">
               <div class="visual-card">
-                <span class="visual-card__label">Visual cue</span>
-                <p>Abstract, colorful cloud formations that resemble imaginative trees or mushrooms against a dark, starry sky.</p>
+                <span class="visual-card__label" data-i18n="home.hero.visualLabel">Visual cue</span>
+                <p data-i18n="home.hero.visualDescription">
+                  Abstract, colorful cloud formations that resemble imaginative trees or mushrooms against a dark, starry sky.
+                </p>
               </div>
             </aside>
           </div>
@@ -40,20 +161,32 @@
           <div class="layout approach__layout">
             <div class="approach__grid">
               <article class="approach__item">
-                <h2>Speed meets clarity</h2>
-                <p>We deliver lean, beautiful, and functional setups &mdash; without long agency loops.</p>
-                <p class="visual-cue"><span>Visual cue</span> Abstract, colorful digital artwork with spiral patterns, lines, and clouds on a dark background.</p>
+                <h2 data-i18n="home.approach.speed.title">Speed meets clarity</h2>
+                <p data-i18n="home.approach.speed.copy">
+                  We deliver lean, beautiful, and functional setups &mdash; without long agency loops.
+                </p>
+                <p class="visual-cue" data-i18n-html="home.approach.speed.visual">
+                  <span data-i18n="home.shared.visualCue">Visual cue</span>
+                  Abstract, colorful digital artwork with spiral patterns, lines, and clouds on a dark background.
+                </p>
               </article>
 
               <article class="approach__item">
-                <h2>Strategic by design</h2>
-                <p>Everything we build is rooted in product thinking and clear messaging.</p>
-                <p class="visual-cue"><span>Visual cue</span> A colorful night landscape with a winding path, mountains, and forests.</p>
+                <h2 data-i18n="home.approach.strategy.title">Strategic by design</h2>
+                <p data-i18n="home.approach.strategy.copy">
+                  Everything we build is rooted in product thinking and clear messaging.
+                </p>
+                <p class="visual-cue" data-i18n-html="home.approach.strategy.visual">
+                  <span data-i18n="home.shared.visualCue">Visual cue</span>
+                  A colorful night landscape with a winding path, mountains, and forests.
+                </p>
               </article>
 
               <article class="approach__item">
-                <h2>Builder mindset</h2>
-                <p>We are former founders and fast operators. We've been there. We think in next steps, not just deliverables.</p>
+                <h2 data-i18n="home.approach.builder.title">Builder mindset</h2>
+                <p data-i18n="home.approach.builder.copy">
+                  We are former founders and fast operators. We've been there. We think in next steps, not just deliverables.
+                </p>
               </article>
             </div>
           </div>
@@ -62,37 +195,39 @@
         <section id="section-3" class="section deliverables">
           <div class="layout deliverables__layout">
             <header class="deliverables__header">
-              <h1>What we deliver</h1>
+              <h2 data-i18n="home.deliverables.title">What we deliver</h2>
             </header>
             <div class="deliverables__grid">
               <article class="deliverables__item">
-                <h2>Internal tools</h2>
+                <h3 data-i18n="home.deliverables.internal.title">Internal tools</h3>
                 <ul class="deliverables__list">
-                  <li>Lightweight tools that remove manual work.</li>
-                  <li>Fast to ship. Easy to maintain.</li>
+                  <li data-i18n="home.deliverables.internal.point1">Lightweight tools that remove manual work.</li>
+                  <li data-i18n="home.deliverables.internal.point2">Fast to ship. Easy to maintain.</li>
                 </ul>
               </article>
 
               <article class="deliverables__item">
-                <h2>AI-powered agents &amp; workflow automation</h2>
+                <h3 data-i18n="home.deliverables.agents.title">AI-powered agents &amp; workflow automation</h3>
                 <ul class="deliverables__list">
-                  <li>Agentic assistants for internal and client use.</li>
-                  <li>End-to-end automations across your stack.</li>
+                  <li data-i18n="home.deliverables.agents.point1">Agentic assistants for internal and client use.</li>
+                  <li data-i18n="home.deliverables.agents.point2">End-to-end automations across your stack.</li>
                 </ul>
               </article>
 
               <article class="deliverables__item">
-                <h2>Automation and AI</h2>
+                <h3 data-i18n="home.deliverables.automation.title">Automation and AI</h3>
                 <ul class="deliverables__list">
-                  <li>Overview of AI developments &amp; opportunities.</li>
-                  <li>Identifying AI potentials for your business.</li>
+                  <li data-i18n="home.deliverables.automation.point1">
+                    Overview of AI developments &amp; opportunities.
+                  </li>
+                  <li data-i18n="home.deliverables.automation.point2">Identifying AI potentials for your business.</li>
                 </ul>
               </article>
 
               <article class="deliverables__item">
-                <h2>AI Workshops</h2>
+                <h3 data-i18n="home.deliverables.workshops.title">AI Workshops</h3>
                 <ul class="deliverables__list">
-                  <li>In-person. Tailored to SMEs.</li>
+                  <li data-i18n="home.deliverables.workshops.point1">In-person. Tailored to SMEs.</li>
                 </ul>
               </article>
             </div>
@@ -102,12 +237,16 @@
         <section id="section-4" class="section about-section">
           <div class="layout about-section__layout">
             <div class="about-section__content">
-              <h1>About us</h1>
-              <p>We are a duo of former founders who have built and shipped AI products from scratch. Today, we bring that energy to teams who need to move fast and communicate clearly. We combine <strong>design, strategy, and tech</strong> to make things happen &mdash; without the overhead.</p>
+              <h2 data-i18n="home.about.title">About us</h2>
+              <p data-i18n="home.about.copy">
+                We are a duo of former founders who have built and shipped AI products from scratch. Today, we bring that
+                energy to teams who need to move fast and communicate clearly. We combine <strong>design, strategy, and
+                tech</strong> to make things happen &mdash; without the overhead.
+              </p>
             </div>
             <aside class="about-section__panel" id="get-in-touch">
-              <h2>Get in touch</h2>
-              <p>Let's scope your challenge and move from idea to impact. Fast.</p>
+              <h3 data-i18n="home.about.ctaTitle">Get in touch</h3>
+              <p data-i18n="home.about.ctaCopy">Let's scope your challenge and move from idea to impact. Fast.</p>
             </aside>
           </div>
         </section>
@@ -115,66 +254,92 @@
         <section id="section-5" class="section requests">
           <div class="layout requests__layout">
             <header class="requests__header">
-              <h1>Typical requests</h1>
+              <h2 data-i18n="home.requests.title">Typical requests</h2>
             </header>
             <div class="requests__grid">
               <div class="requests__row">
                 <h3 class="requests__heading">
                   <button class="requests__toggle js-accordion-toggle" type="button" aria-expanded="false" aria-controls="request-panel-1" id="request-toggle-1">
-                    <span class="requests__question">"We need a landing page, a pitch deck and a basic brand &mdash; in 5 days."</span>
+                    <span class="requests__question" data-i18n="home.requests.items.0.question">
+                      "We need a landing page, a pitch deck and a basic brand &mdash; in 5 days."
+                    </span>
                     <span class="requests__icon" aria-hidden="true">
                       <span class="requests__icon-line requests__icon-line--vertical"></span>
                       <span class="requests__icon-line requests__icon-line--horizontal"></span>
                     </span>
                   </button>
                 </h3>
-                <div class="requests__panel" id="request-panel-1" role="region" aria-labelledby="request-toggle-1" hidden>
-                  <p>We specialize in fast, high-impact branding for early-stage startups and projects. Within days, we help you launch a clean landing page, build a sharp pitch deck, and define your visual identity &mdash; logo, colors, typography, and tone of voice. Whether you are preparing for investor conversations or a public beta, our pitch deck support and brand setup get you from zero to ready, fast.</p>
+                <div class="requests__panel" id="request-panel-1" role="region" aria-labelledby="request-toggle-1">
+                  <p data-i18n="home.requests.items.0.answer">
+                    We specialize in fast, high-impact branding for early-stage startups and projects. Within days, we help
+                    you launch a clean landing page, build a sharp pitch deck, and define your visual identity &mdash; logo,
+                    colors, typography, and tone of voice. Whether you are preparing for investor conversations or a public
+                    beta, our pitch deck support and brand setup get you from zero to ready, fast.
+                  </p>
                 </div>
               </div>
 
               <div class="requests__row">
                 <h3 class="requests__heading">
                   <button class="requests__toggle js-accordion-toggle" type="button" aria-expanded="false" aria-controls="request-panel-2" id="request-toggle-2">
-                    <span class="requests__question">"We need expert consulting on our tech stack before we start hiring/building."</span>
+                    <span class="requests__question" data-i18n="home.requests.items.1.question">
+                      "We need expert consulting on our tech stack before we start hiring/building."
+                    </span>
                     <span class="requests__icon" aria-hidden="true">
                       <span class="requests__icon-line requests__icon-line--vertical"></span>
                       <span class="requests__icon-line requests__icon-line--horizontal"></span>
                     </span>
                   </button>
                 </h3>
-                <div class="requests__panel" id="request-panel-2" role="region" aria-labelledby="request-toggle-2" hidden>
-                  <p>Choosing the right tech stack is critical in the early stages of any startup project. We provide tech stack consulting tailored to your product vision, use case, and team structure. Whether you are building a no-code MVP or scaling with custom APIs, we guide you in selecting the tools and infrastructure that save time and grow with you.</p>
+                <div class="requests__panel" id="request-panel-2" role="region" aria-labelledby="request-toggle-2">
+                  <p data-i18n="home.requests.items.1.answer">
+                    Choosing the right tech stack is critical in the early stages of any startup project. We provide tech
+                    stack consulting tailored to your product vision, use case, and team structure. Whether you are building a
+                    no-code MVP or scaling with custom APIs, we guide you in selecting the tools and infrastructure that save
+                    time and grow with you.
+                  </p>
                 </div>
               </div>
 
               <div class="requests__row">
                 <h3 class="requests__heading">
                   <button class="requests__toggle js-accordion-toggle" type="button" aria-expanded="false" aria-controls="request-panel-3" id="request-toggle-3">
-                    <span class="requests__question">"We want to build an AI copilot to support us / our clients in XYZ."</span>
+                    <span class="requests__question" data-i18n="home.requests.items.2.question">
+                      "We want to build an AI copilot to support us / our clients in XYZ."
+                    </span>
                     <span class="requests__icon" aria-hidden="true">
                       <span class="requests__icon-line requests__icon-line--vertical"></span>
                       <span class="requests__icon-line requests__icon-line--horizontal"></span>
                     </span>
                   </button>
                 </h3>
-                <div class="requests__panel" id="request-panel-3" role="region" aria-labelledby="request-toggle-3" hidden>
-                  <p>We design and develop AI copilots that integrate into your internal tools or client-facing platforms. Using agentic workflows, LLM APIs, and automation tools, we help you create smart assistants tailored to your use case &mdash; from internal process support to external user engagement.</p>
+                <div class="requests__panel" id="request-panel-3" role="region" aria-labelledby="request-toggle-3">
+                  <p data-i18n="home.requests.items.2.answer">
+                    We design and develop AI copilots that integrate into your internal tools or client-facing platforms. Using
+                    agentic workflows, LLM APIs, and automation tools, we help you create smart assistants tailored to your use
+                    case &mdash; from internal process support to external user engagement.
+                  </p>
                 </div>
               </div>
 
               <div class="requests__row">
                 <h3 class="requests__heading">
                   <button class="requests__toggle js-accordion-toggle" type="button" aria-expanded="false" aria-controls="request-panel-4" id="request-toggle-4">
-                    <span class="requests__question">"Can we automate this manual process?"</span>
+                    <span class="requests__question" data-i18n="home.requests.items.3.question">
+                      "Can we automate this manual process?"
+                    </span>
                     <span class="requests__icon" aria-hidden="true">
                       <span class="requests__icon-line requests__icon-line--vertical"></span>
                       <span class="requests__icon-line requests__icon-line--horizontal"></span>
                     </span>
                   </button>
                 </h3>
-                <div class="requests__panel" id="request-panel-4" role="region" aria-labelledby="request-toggle-4" hidden>
-                  <p>Absolutely. We identify automation opportunities within your current workflows and implement custom solutions using tools like Zapier, Make, or n8n. From email sequences to lead qualification to internal approvals &mdash; if it is manual and repetitive, we can probably automate it.</p>
+                <div class="requests__panel" id="request-panel-4" role="region" aria-labelledby="request-toggle-4">
+                  <p data-i18n="home.requests.items.3.answer">
+                    Absolutely. We identify automation opportunities within your current workflows and implement custom
+                    solutions using tools like Zapier, Make, or n8n. From email sequences to lead qualification to internal
+                    approvals &mdash; if it is manual and repetitive, we can probably automate it.
+                  </p>
                 </div>
               </div>
             </div>
@@ -186,9 +351,9 @@
         <div class="layout footer__layout">
           <div class="footer__brand" data-i18n="footer.brand">Vibeperform</div>
           <div class="footer__cta">
-            <a href="#section-2">Approach</a>
-            <a href="#section-3">What we deliver</a>
-            <a href="#get-in-touch">Get in touch</a>
+            <a href="#section-2" data-i18n="footer.links.approach">Approach</a>
+            <a href="#section-3" data-i18n="footer.links.deliverables">What we deliver</a>
+            <a href="#get-in-touch" data-i18n="footer.links.contact">Get in touch</a>
           </div>
           <div class="footer__legal">
             &copy; <span id="year"></span> <span data-i18n="footer.legal">Vibeperform. All rights reserved.</span>
@@ -201,22 +366,12 @@
     <script src="scripts/toggleLanguage.js" defer></script>
     <script src="scripts/siteHeader.js" defer></script>
     <script src="scripts/accordion.js" defer></script>
+    <script src="scripts/chatbot.js" defer></script>
 
-    <!-- Embedded AI assistant widget fixed to the viewport -->
-    <iframe
-      src="https://viebeperform-chatbot1-76728983516.europe-west4.run.app/"
-      style="
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 400px;
-        height: 600px;
-        border: none;
-        border-radius: 12px;
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        z-index: 9999;
-      "
-      title="Innovate AI Assistant"
-    ></iframe>
+    <div class="chatbot-launcher" data-chatbot-container>
+      <button type="button" class="chatbot-launcher__button" data-chatbot-trigger data-i18n="chatbot.trigger">
+        Open AI assistant
+      </button>
+    </div>
   </body>
 </html>
