@@ -6,7 +6,30 @@
 window.__LOCALES__ = {
   "de": {
     "meta": {
-      "title": "Vibeperform"
+      "index": {
+        "title": "Vibeperform | Studio für Marken, Web & Automatisierung mit KI",
+        "description": "Vibeperform bringt Ideen schnell zur Wirkung: mit Markenstrategie, schnellen Landing Pages und KI-gestützter Automatisierung für Start-ups und Mittelstand.",
+        "ogTitle": "Vibeperform | Studio für Marken, Web & Automatisierung mit KI",
+        "ogDescription": "Von der Idee zur Wirkung in Rekordzeit. Vibeperform entwickelt starke Markenauftritte, digitale Experiences und KI-Automatisierung für euren nächsten Launch.",
+        "twitterTitle": "Vibeperform | Studio für Marken, Web & Automatisierung mit KI",
+        "twitterDescription": "Von der Idee zur Wirkung in Rekordzeit. Vibeperform kombiniert Brand, Web und KI-Automatisierung."
+      },
+      "workshops": {
+        "title": "AI Workshops von Vibeperform | Explore, Design & Ideate",
+        "description": "Wählt das AI Workshop-Format von Vibeperform, das zu eurer Herausforderung passt. Chancen entdecken, Zielbilder designen oder Ideen anstoßen.",
+        "ogTitle": "AI Workshops von Vibeperform | Explore, Design & Ideate",
+        "ogDescription": "Hands-on AI Workshops, um Chancen zu identifizieren, künftige Experiences zu entwerfen und euer Team auf umsetzbare Use Cases einzuschwören.",
+        "twitterTitle": "AI Workshops von Vibeperform | Explore, Design & Ideate",
+        "twitterDescription": "Bucht AI Workshops, die auf eure Business-Challenge zugeschnitten sind. Explore, Design oder Ideate mit Vibeperform."
+      },
+      "about": {
+        "title": "Über Vibeperform | Gründer:innen, die Ideen in Momentum verwandeln",
+        "description": "Lernt die Gründer:innen von Vibeperform kennen. Wir verbinden Produktsicht, Design und KI-Automatisierung, damit Teams smarter launchen und schneller skalieren.",
+        "ogTitle": "Über Vibeperform | Gründer:innen, die Ideen in Momentum verwandeln",
+        "ogDescription": "Vibeperform wird von Gründer:innen geführt, die Design, Strategie und KI kombinieren, um wirkungsstark und schnell zu liefern.",
+        "twitterTitle": "Über Vibeperform | Gründer:innen, die Ideen in Momentum verwandeln",
+        "twitterDescription": "Lernt das Team kennen, das schnelle Ergebnisse in Brand, Design und KI-Automatisierung für ambitionierte Teams liefert."
+      }
     },
     "languageToggle": {
       "label": "Sprache",
@@ -18,83 +41,229 @@ window.__LOCALES__ = {
     "nav": {
       "brand": "Vibeperform",
       "links": {
-        "features": "Funktionen",
-        "about": "Ansatz",
-        "contact": "Kontakt"
+        "overview": "Überblick",
+        "workshops": "Workshops",
+        "about": "Über uns"
       }
     },
-    "hero": {
-      "eyebrow": "Intuition + Wirkung",
-      "headline": "Verwandle Intuition in messbare Dynamik.",
-      "body": "Wir verbinden empathisches Gespür mit präziser KI, damit Ihre Organisation schnell vorankommt, abgestimmt bleibt und Ergebnisse liefert, die Ihre Teams spüren – und Ihre Dashboards belegen.",
-      "primaryCta": "Rhythmus starten",
-      "secondaryCta": "Ansatz entdecken",
-      "visualAriaLabel": "Abstrakte Puls-Grafik"
-    },
-    "features": {
-      "eyebrow": "Was wir freisetzen",
-      "headline": "Insights mit menschlichem Gefühl, Wirkung mit messbarer Substanz.",
-      "body": "Jedes Mandat verbindet Dialog und Daten, damit Führungskräfte den Puls hören, Teams den Weg sehen und Kennzahlen das Momentum belegen.",
-      "cards": [
-        {
-          "title": "Empathisches Spüren",
-          "body": "Dekodieren Sie Team-Stimmungen durch moderierte Interviews mit KI-gestützter Sentiment-Analyse.",
-          "callout": "↑ 18 % Team-NPS"
-        },
-        {
-          "title": "Strategische Orchestrierung",
-          "body": "Übersetzen Sie Intuition in Roadmaps, Rituale und messbare OKRs, die Ihre Führungskräfte tragen.",
-          "callout": "4-wöchiger Alignment-Sprint"
-        },
-        {
-          "title": "Momentum-Dashboards",
-          "body": "Machen Sie das Signal-Rausch-Verhältnis sichtbar mit Duotone-Analytics, die Geschichten transportieren.",
-          "callout": "92 % Insight-Adoption"
+    "home": {
+      "shared": {
+        "visualCue": "Visueller Hinweis"
+      },
+      "hero": {
+        "title": "Von der Idee zur Wirkung. Schnell.",
+        "subtitle": "Wir bringen euch von Null zur Klarheit – mit smartem Brand Design, schneller Technik und KI-gestützten Workflows.",
+        "supporting": "Eure Sparringspartner für <strong>Brand, Web & Automatisierung</strong>.",
+        "visualLabel": "Visueller Hinweis",
+        "visualDescription": "Abstrakte, farbenfrohe Wolkenformationen, die wie imaginative Bäume oder Pilze vor einem dunklen Sternenhimmel schweben.",
+        "tags": {
+          "brand": "Brand",
+          "web": "Web",
+          "automation": "Automatisierung"
         }
-      ]
-    },
-    "about": {
-      "eyebrow": "Warum Vibeperform",
-      "headline": "Wir stimmen Strategie mit menschlichem Gespür und maschineller Klarheit ab.",
-      "paragraphs": [
-        "\"Vibe\" bringt Intuition, Atmosphäre und Empathie. \"Perform\" liefert disziplinierte Ausführung und messbare Ergebnisse. Gemeinsam führen wir Ihre Organisation dazu, mit Herz und Präzision zu handeln.",
-        "Von der Diagnose bis zur Umsetzung arbeiten unsere Consultants direkt mit Ihren Teams, kombinieren moderierte Workshops mit intelligenten Copiloten und halten Momentum sichtbar."
-      ],
-      "highlights": [
-        {
-          "title": "Hybrid-Intelligence-Labs",
-          "body": "Interaktive Sessions, die menschliche Nuancen freilegen, während KI verwertbare Daten erfasst."
+      },
+      "approach": {
+        "speed": {
+          "title": "Tempo trifft Klarheit",
+          "copy": "Wir liefern schlanke, schöne und funktionale Setups – ohne endlose Agenturschleifen.",
+          "visual": "<span data-i18n=\"home.shared.visualCue\">Visueller Hinweis</span> Abstrakte, digitale Kunst mit Spiralformen, Linien und Wolken vor dunklem Hintergrund."
         },
-        {
-          "title": "Rhythmusgestaltung",
-          "body": "Wir formen Rituale, Stand-ups und Reviews, die Tempo halten ohne auszubrennen."
+        "strategy": {
+          "title": "Strategisch gedacht",
+          "copy": "Alles, was wir bauen, basiert auf Product Thinking und klarer Kommunikation.",
+          "visual": "<span data-i18n=\"home.shared.visualCue\">Visueller Hinweis</span> Eine bunte Nachtlandschaft mit kurvigem Pfad, Bergen und Wäldern."
         },
-        {
-          "title": "Nachweis von Momentum",
-          "body": "Scorecards erzählen jede Story in Narrativ und Zahlen für jeden Stakeholder."
+        "builder": {
+          "title": "Builder-Mindset",
+          "copy": "Wir sind ehemalige Gründer:innen und schnelle Operator. Wir kennen die Reise und denken in nächsten Schritten – nicht nur in Deliverables."
         }
-      ]
-    },
-    "contact": {
-      "eyebrow": "Bereit zum Abgleich",
-      "headline": "Starten Sie den Rhythmus mit einer KI-Strategie-Session.",
-      "body": "Teilen Sie Ihre aktuelle Herausforderung und wir entwerfen einen Signal-Scan, der Quick Wins, Risiken und erste Hebel sichtbar macht.",
-      "primaryCta": "Discovery-Call buchen",
-      "secondaryCta": "Unseren Rhythmus ansehen"
+      },
+      "deliverables": {
+        "title": "Was wir liefern",
+        "internal": {
+          "title": "Interne Tools",
+          "point1": "Leichte Tools, die manuelle Arbeit eliminieren.",
+          "point2": "Schnell geliefert. Einfach zu pflegen."
+        },
+        "agents": {
+          "title": "KI-Agents & Workflow-Automatisierung",
+          "point1": "Agenten für interne und externe Use Cases.",
+          "point2": "End-to-End-Automationen über euren Stack."
+        },
+        "automation": {
+          "title": "Automatisierung & KI",
+          "point1": "Überblick über KI-Entwicklungen und Chancen.",
+          "point2": "Wir identifizieren KI-Potenziale für euer Business."
+        },
+        "workshops": {
+          "title": "AI Workshops",
+          "point1": "Vor Ort. Auf KMU zugeschnitten."
+        }
+      },
+      "about": {
+        "title": "Über uns",
+        "copy": "Wir sind ein Duo ehemaliger Gründer:innen, das KI-Produkte von Grund auf gebaut und gelauncht hat. Heute bringen wir diese Energie in Teams, die schnell vorankommen und klar kommunizieren wollen. Wir verbinden <strong>Design, Strategie und Tech</strong>, um Dinge möglich zu machen – ohne Overhead.",
+        "ctaTitle": "Meldet euch",
+        "ctaCopy": "Lasst uns eure Herausforderung scopen und von der Idee zur Wirkung kommen. Schnell."
+      },
+      "requests": {
+        "title": "Typische Anfragen",
+        "items": [
+          {
+            "question": "\"Wir brauchen in 5 Tagen eine Landing Page, ein Pitch Deck und eine Basis-Brand.\"",
+            "answer": "Wir sind auf schnelle, wirkungsvolle Markenarbeit für junge Projekte spezialisiert. Innerhalb weniger Tage launchen wir eine klare Landing Page, schärfen euer Pitch Deck und definieren eure visuelle Identität – Logo, Farben, Typografie und Tonalität. Ob für Investorengespräche oder einen Beta-Launch: Mit uns seid ihr blitzschnell bereit."
+          },
+          {
+            "question": "\"Wir brauchen Tech-Stack-Beratung, bevor wir mit Hiring oder Entwicklung starten.\"",
+            "answer": "Der richtige Tech Stack ist in frühen Phasen entscheidend. Wir beraten euch passend zu Produktvision, Use Case und Teamstruktur. Egal ob No-Code-MVP oder skalierbare APIs – wir helfen euch, Tools und Infrastruktur zu wählen, die Zeit sparen und mitwachsen."
+          },
+          {
+            "question": "\"Wir wollen einen AI Copilot bauen, der uns oder unseren Kund:innen hilft.\"",
+            "answer": "Wir konzipieren und entwickeln AI Copilots, die sich in eure internen Tools oder Kundenplattformen integrieren. Mit agentischen Workflows, LLM-APIs und Automations-Stacks bauen wir smarte Assistenten, die genau auf euren Use Case zugeschnitten sind – von internem Support bis zu externem Engagement."
+          },
+          {
+            "question": "\"Können wir diesen manuellen Prozess automatisieren?\"",
+            "answer": "Definitiv. Wir identifizieren Automatisierungspotenziale in euren Abläufen und setzen individuelle Lösungen mit Tools wie Zapier, Make oder n8n um. Von E-Mail-Sequenzen über Lead-Qualifizierung bis zu internen Freigaben – wenn es repetitiv ist, automatisieren wir es wahrscheinlich."
+          }
+        ]
+      }
     },
     "footer": {
       "brand": "Vibeperform",
       "links": {
-        "features": "Funktionen",
-        "about": "Ansatz",
+        "approach": "Ansatz",
+        "deliverables": "Leistungen",
         "contact": "Kontakt"
       },
       "legal": "Vibeperform. Alle Rechte vorbehalten."
+    },
+    "workshopsPage": {
+      "hero": {
+        "title": "Business AI Workshops",
+        "paragraphs": [
+          "Entdeckt Chancen, entwerft neue Experiences und richtet euer Team auf konkrete AI Use Cases aus.",
+          "Jede Session ist hands-on, kollaborativ und auf euren Business-Kontext zugeschnitten."
+        ],
+        "visualLabel": "Visueller Hinweis",
+        "visualDescription": "Lebendige Workshop-Szene: Teams versammeln sich um einen Tisch voller Skizzen, Post-its und leuchtender Datenprojektionen."
+      },
+      "intro": {
+        "title": "Wählt das Format, das zu eurer Herausforderung passt",
+        "body": "Von der Exploration bis zum ausgearbeiteten Zielbild: Unsere Business AI Workshops bringen euch von den ersten Fragen zu konkreten nächsten Schritten."
+      },
+      "formats": [
+        {
+          "title": "Business AI Explore Workshop",
+          "meta": [
+            "<strong>Ziel:</strong> Zentrale Business-Challenges erkennen und passende AI Use Cases formen.",
+            "<strong>Für:</strong> 3-10 Entscheider:innen aus Business, IT und Projektrollen.",
+            "<strong>Ergebnis:</strong> Erste konkrete Use-Case-Ideen, priorisiert nach Business-Value.",
+            "<strong>Format:</strong> 1 ganzer Tag vor Ort oder 2 halbe Tage remote.",
+            "<strong>Preis:</strong> <strong>€750</strong>. <a class=\"workshop-card__link\" href=\"https://www.vibeperform.com/workshops\" target=\"_blank\" rel=\"noreferrer noopener\">vibeperform</a>"
+          ]
+        },
+        {
+          "title": "Business AI Design Workshop",
+          "meta": [
+            "<strong>Ziel:</strong> Einen ausgewählten Use Case vertiefen und das künftige <strong>To-Be</strong>-Szenario mit AI gestalten.",
+            "<strong>Für:</strong> Teams bis 8 Personen (inkl. Endnutzer:innen, Developer, Designer:innen).",
+            "<strong>Ergebnis:</strong> Klarer Zielzustand inkl. User Journey, Anforderungen und Impact.",
+            "<strong>Format:</strong> 1 ganzer Tag vor Ort oder 2 halbe Tage remote.",
+            "<strong>Preis:</strong> <strong>€750</strong>. <a class=\"workshop-card__link\" href=\"https://www.vibeperform.com/workshops\" target=\"_blank\" rel=\"noreferrer noopener\">vibeperform</a>"
+          ]
+        },
+        {
+          "title": "Business AI Ideation Cards Session",
+          "meta": [
+            "<strong>Ziel:</strong> Konkrete Ideen wecken, wie AI in euren Prozessen Mehrwert schafft.",
+            "<strong>Für:</strong> Teams oder Abteilungen, die erste Impulse suchen.",
+            "<strong>Ergebnis:</strong> Breites Ideen-Set als Basis für Explore oder Design.",
+            "<strong>Format:</strong> Flexibel (1-3 Stunden).",
+            "<strong>Preis:</strong> <strong>€500</strong>. <a class=\"workshop-card__link\" href=\"https://www.vibeperform.com/workshops\" target=\"_blank\" rel=\"noreferrer noopener\">vibeperform</a>"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Session buchen",
+        "copy": "Unsere AI Workshops könnt ihr on demand buchen. <strong>Meldet euch</strong> und wir passen das Format an euer Team an.",
+        "ready": "Bereit, wenn ihr es seid: <a href=\"index.html#get-in-touch\">Lasst uns euren Workshop planen</a>."
+      }
+    },
+    "aboutPage": {
+      "hero": {
+        "title": "Performing systems, good vibes.",
+        "paragraphs": [
+          "Wir sind ein schlankes Gründer:innen-Team, das ambitionierten Menschen hilft, smart zu launchen und schnell zu skalieren.",
+          "VibePerform verbindet Brand, Design und KI, damit ihr von der Idee zur Realität kommt, ohne Momentum zu verlieren."
+        ],
+        "visualLabel": "Visueller Hinweis",
+        "visualDescription": "Zwei Gründer:innen skizzieren Ideen auf einer hellen Fläche, umgeben von Linien für Brand, Design und KI."
+      },
+      "overview": {
+        "title": "Über uns",
+        "tagline": "Performing systems, good vibes.",
+        "summary1": "VibePerform ist ein schlankes, gründergeführtes Team, das ambitionierten Teams und Unternehmer:innen hilft, neue Ideen schnell zu launchen und smart zu skalieren.",
+        "summary2": "Mit einem vertrauten Netzwerk aus Freelancer:innen werden wir euer eingebettetes Team für <strong>Brand, Design und KI</strong>."
+      },
+      "principles": {
+        "title": "So arbeiten wir",
+        "items": [
+          "Klein, senior, schnell.",
+          "Klare Rollen. Dichte Feedback-Loops.",
+          "Product Thinking trifft klare Kommunikation.",
+          "Tools dienen Menschen — nicht umgekehrt."
+        ]
+      },
+      "team": {
+        "title": "Team",
+        "members": [
+          {
+            "initials": "IH",
+            "name": "Isabella Hoesch",
+            "role": "Product & Design",
+            "bio1": "Isabella bringt frische Ideen schnell in Form. Mit Background in Verhaltenswissenschaft und Human-Centered Design sorgt sie für Klarheit, Ruhe und Momentum in Momenten wie Landing Pages, Präsentationen und Strategien.",
+            "bio2": "Als Co-Founderin von Codum hat sie Visionen in intuitive Produkte verwandelt — mit smarten Tools, schnellem Feedback und pragmatischer Umsetzung."
+          },
+          {
+            "initials": "MD",
+            "name": "Marlon Dietrich",
+            "role": "AI & Automatisierung",
+            "bio1": "Marlon ist unser Go-to für KI und Workflow-Automatisierung. Mit Software-Engineering-Background und Blick für effiziente Systeme macht er aus komplexen Problemen nützliche Tools.",
+            "bio2": "Er glaubt an Fortschritt für alle und baut Technologien, die Menschen repetitive Aufgaben abnehmen — damit die aktuelle Tech-Revolution für Teams jeder Größe nutzbar wird."
+          }
+        ]
+      }
+    },
+    "chatbot": {
+      "trigger": "AI-Assistent öffnen"
     }
   },
   "en": {
     "meta": {
-      "title": "Vibeperform"
+      "index": {
+        "title": "Vibeperform | AI-Led Brand, Web & Automation Studio",
+        "description": "Vibeperform moves ideas to impact fast with brand strategy, lightning-fast landing pages, and AI-powered automation for startups and SMEs.",
+        "ogTitle": "Vibeperform | AI-Led Brand, Web & Automation Studio",
+        "ogDescription": "From idea to impact fast. Partner with Vibeperform for sharp brand design, web experiences, and AI automation tailored to your next launch.",
+        "twitterTitle": "Vibeperform | AI-Led Brand, Web & Automation Studio",
+        "twitterDescription": "From idea to impact fast. Partner with Vibeperform for sharp brand design, web experiences, and AI automation."
+      },
+      "workshops": {
+        "title": "AI Workshops by Vibeperform | Explore, Design & Ideate",
+        "description": "Choose the Vibeperform AI workshop that fits your challenge. Explore opportunities, design to-be journeys, or spark ideas with tailored sessions.",
+        "ogTitle": "AI Workshops by Vibeperform | Explore, Design & Ideate",
+        "ogDescription": "Hands-on AI workshops to identify opportunities, design future experiences, and align your team on actionable use cases.",
+        "twitterTitle": "AI Workshops by Vibeperform | Explore, Design & Ideate",
+        "twitterDescription": "Book hands-on AI workshops tailored to your business challenge. Explore, design, or ideate with Vibeperform."
+      },
+      "about": {
+        "title": "About Vibeperform | Founders Turning Ideas into Momentum",
+        "description": "Meet the founders of Vibeperform. We blend product thinking, design, and AI automation to help teams launch smarter and scale faster.",
+        "ogTitle": "About Vibeperform | Founders Turning Ideas into Momentum",
+        "ogDescription": "Vibeperform is led by founders who pair design, strategy, and AI to ship high-impact work quickly.",
+        "twitterTitle": "About Vibeperform | Founders Turning Ideas into Momentum",
+        "twitterDescription": "Get to know the team delivering fast design, brand, and AI automation outcomes for ambitious teams."
+      }
     },
     "languageToggle": {
       "label": "Language",
@@ -106,78 +275,201 @@ window.__LOCALES__ = {
     "nav": {
       "brand": "Vibeperform",
       "links": {
-        "features": "Features",
-        "about": "Approach",
-        "contact": "Contact"
+        "overview": "Overview",
+        "workshops": "Workshops",
+        "about": "About"
       }
     },
-    "hero": {
-      "eyebrow": "Intuition + Impact",
-      "headline": "Turn intuition into measurable momentum.",
-      "body": "We blend empathetic sensing with precision AI so your organisation can move fast, stay aligned, and deliver outcomes your teams feel—and your dashboards prove.",
-      "primaryCta": "Start the cadence",
-      "secondaryCta": "Explore the approach",
-      "visualAriaLabel": "Abstract pulse graphic"
-    },
-    "features": {
-      "eyebrow": "What we unlock",
-      "headline": "Insight that feels human, impact that stacks up.",
-      "body": "Every engagement bridges conversation with computation—so leaders hear the pulse, teams see the path, and the metrics prove the momentum.",
-      "cards": [
-        {
-          "title": "Empathic sensing",
-          "body": "Decode team vibes through guided interviews enriched with AI sentiment lenses.",
-          "callout": "↑ 18% team NPS"
-        },
-        {
-          "title": "Strategic orchestration",
-          "body": "Translate intuition into roadmaps, rituals, and measurable OKRs your leaders own.",
-          "callout": "4-week alignment sprint"
-        },
-        {
-          "title": "Momentum dashboards",
-          "body": "Surface live signal-to-noise ratios with duotone analytics built for narrative.",
-          "callout": "92% insight adoption"
+    "home": {
+      "shared": {
+        "visualCue": "Visual cue"
+      },
+      "hero": {
+        "title": "From idea to impact. Fast.",
+        "subtitle": "Move from zero to clarity — with smart brand design, fast tech, and AI-powered workflows.",
+        "supporting": "Your sparring partners in <strong>brand, web & automation</strong>.",
+        "visualLabel": "Visual cue",
+        "visualDescription": "Abstract, colorful cloud formations that resemble imaginative trees or mushrooms against a dark, starry sky.",
+        "tags": {
+          "brand": "Brand",
+          "web": "Web",
+          "automation": "Automation"
         }
-      ]
-    },
-    "about": {
-      "eyebrow": "Why Vibeperform",
-      "headline": "We tune strategy with human sense and machine clarity.",
-      "paragraphs": [
-        "“Vibe” brings intuition, atmosphere, and empathy. “Perform” brings disciplined execution and measurable outcomes. Together, we guide your organisation to act with both heart and precision.",
-        "From diagnostics to delivery, our consultants embed alongside your teams, pairing guided workshops with intelligent copilots that keep momentum visible."
-      ],
-      "highlights": [
-        {
-          "title": "Hybrid intelligence labs",
-          "body": "Interactive sessions that surface human nuance while AI captures actionable data."
+      },
+      "approach": {
+        "speed": {
+          "title": "Speed meets clarity",
+          "copy": "We deliver lean, beautiful, and functional setups — without long agency loops.",
+          "visual": "<span data-i18n=\"home.shared.visualCue\">Visual cue</span> Abstract, colorful digital artwork with spiral patterns, lines, and clouds on a dark background."
         },
-        {
-          "title": "Cadence design",
-          "body": "We shape rituals, standups, and reviews that sustain rhythm without burnout."
+        "strategy": {
+          "title": "Strategic by design",
+          "copy": "Everything we build is rooted in product thinking and clear messaging.",
+          "visual": "<span data-i18n=\"home.shared.visualCue\">Visual cue</span> A colorful night landscape with a winding path, mountains, and forests."
         },
-        {
-          "title": "Proof of traction",
-          "body": "Scorecards articulate the story in both narrative and numbers for every stakeholder."
+        "builder": {
+          "title": "Builder mindset",
+          "copy": "We are former founders and fast operators. We've been there. We think in next steps, not just deliverables."
         }
-      ]
-    },
-    "contact": {
-      "eyebrow": "Ready to sync",
-      "headline": "Start the cadence with an AI strategy session.",
-      "body": "Share your current challenge and we will design a signal scan to reveal quick wins, key risks, and which levers to pull first.",
-      "primaryCta": "Book discovery call",
-      "secondaryCta": "View our rhythm"
+      },
+      "deliverables": {
+        "title": "What we deliver",
+        "internal": {
+          "title": "Internal tools",
+          "point1": "Lightweight tools that remove manual work.",
+          "point2": "Fast to ship. Easy to maintain."
+        },
+        "agents": {
+          "title": "AI-powered agents & workflow automation",
+          "point1": "Agentic assistants for internal and client use.",
+          "point2": "End-to-end automations across your stack."
+        },
+        "automation": {
+          "title": "Automation and AI",
+          "point1": "Overview of AI developments & opportunities.",
+          "point2": "Identifying AI potentials for your business."
+        },
+        "workshops": {
+          "title": "AI Workshops",
+          "point1": "In-person. Tailored to SMEs."
+        }
+      },
+      "about": {
+        "title": "About us",
+        "copy": "We are a duo of former founders who have built and shipped AI products from scratch. Today, we bring that energy to teams who need to move fast and communicate clearly. We combine <strong>design, strategy, and tech</strong> to make things happen — without the overhead.",
+        "ctaTitle": "Get in touch",
+        "ctaCopy": "Let's scope your challenge and move from idea to impact. Fast."
+      },
+      "requests": {
+        "title": "Typical requests",
+        "items": [
+          {
+            "question": "\"We need a landing page, a pitch deck and a basic brand — in 5 days.\"",
+            "answer": "We specialize in fast, high-impact branding for early-stage startups and projects. Within days, we help you launch a clean landing page, build a sharp pitch deck, and define your visual identity — logo, colors, typography, and tone of voice. Whether you are preparing for investor conversations or a public beta, our pitch deck support and brand setup get you from zero to ready, fast."
+          },
+          {
+            "question": "\"We need expert consulting on our tech stack before we start hiring/building.\"",
+            "answer": "Choosing the right tech stack is critical in the early stages of any startup project. We provide tech stack consulting tailored to your product vision, use case, and team structure. Whether you are building a no-code MVP or scaling with custom APIs, we guide you in selecting the tools and infrastructure that save time and grow with you."
+          },
+          {
+            "question": "\"We want to build an AI copilot to support us / our clients in XYZ.\"",
+            "answer": "We design and develop AI copilots that integrate into your internal tools or client-facing platforms. Using agentic workflows, LLM APIs, and automation tools, we help you create smart assistants tailored to your use case — from internal process support to external user engagement."
+          },
+          {
+            "question": "\"Can we automate this manual process?\"",
+            "answer": "Absolutely. We identify automation opportunities within your current workflows and implement custom solutions using tools like Zapier, Make, or n8n. From email sequences to lead qualification to internal approvals — if it is manual and repetitive, we can probably automate it."
+          }
+        ]
+      }
     },
     "footer": {
       "brand": "Vibeperform",
       "links": {
-        "features": "Features",
-        "about": "Approach",
-        "contact": "Contact"
+        "approach": "Approach",
+        "deliverables": "What we deliver",
+        "contact": "Get in touch"
       },
       "legal": "Vibeperform. All rights reserved."
+    },
+    "workshopsPage": {
+      "hero": {
+        "title": "Business AI Workshops",
+        "paragraphs": [
+          "Identify opportunities, design new experiences, and align your team around actionable AI use cases.",
+          "Each session is hands-on, collaborative, and tailored to your business context."
+        ],
+        "visualLabel": "Visual cue",
+        "visualDescription": "Vibrant workshop scene with teams gathering around a table filled with sketches, post-its, and glowing data projections."
+      },
+      "intro": {
+        "title": "Choose the format that matches your challenge",
+        "body": "From exploring possibilities to designing the details, our Business AI workshops help you move from first questions to concrete next steps."
+      },
+      "formats": [
+        {
+          "title": "Business AI Explore Workshop",
+          "meta": [
+            "<strong>Goal:</strong> Identify key business challenges and shape relevant AI use cases.",
+            "<strong>For:</strong> 3-10 leaders from business, IT, and project roles.",
+            "<strong>Outcome:</strong> First concrete use-case ideas, prioritized by business value.",
+            "<strong>Format:</strong> 1 full day on-site or 2 half days remote.",
+            "<strong>Pricing:</strong> <strong>€750</strong>. <a class=\"workshop-card__link\" href=\"https://www.vibeperform.com/workshops\" target=\"_blank\" rel=\"noreferrer noopener\">vibeperform</a>"
+          ]
+        },
+        {
+          "title": "Business AI Design Workshop",
+          "meta": [
+            "<strong>Goal:</strong> Deep-dive one selected use case and design the future <strong>to-be</strong> scenario with AI.",
+            "<strong>For:</strong> Teams up to 8 (incl. end users, developers, designers).",
+            "<strong>Outcome:</strong> Clear target picture incl. user journey, requirements, and impact.",
+            "<strong>Format:</strong> 1 full day on-site or 2 half days remote.",
+            "<strong>Pricing:</strong> <strong>€750</strong>. <a class=\"workshop-card__link\" href=\"https://www.vibeperform.com/workshops\" target=\"_blank\" rel=\"noreferrer noopener\">vibeperform</a>"
+          ]
+        },
+        {
+          "title": "Business AI Ideation Cards Session",
+          "meta": [
+            "<strong>Goal:</strong> Spark concrete ideas for where AI can create value in your processes.",
+            "<strong>For:</strong> Teams or departments looking for first impulses.",
+            "<strong>Outcome:</strong> A broad set of ideas feeding into Explore or Design.",
+            "<strong>Format:</strong> Flexible (1-3 hours).",
+            "<strong>Pricing:</strong> <strong>€500</strong>. <a class=\"workshop-card__link\" href=\"https://www.vibeperform.com/workshops\" target=\"_blank\" rel=\"noreferrer noopener\">vibeperform</a>"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Book a session",
+        "copy": "Our AI workshops are available on demand. <strong>Get in touch</strong> and we will tailor the session to your team.",
+        "ready": "Ready when you are: <a href=\"index.html#get-in-touch\">let's schedule your workshop</a>."
+      }
+    },
+    "aboutPage": {
+      "hero": {
+        "title": "Performing systems, good vibes.",
+        "paragraphs": [
+          "We are a lean, founder-led team helping ambitious people launch smart and scale fast.",
+          "VibePerform combines brand, design, and AI so you can go from idea to reality without losing momentum."
+        ],
+        "visualLabel": "Visual cue",
+        "visualDescription": "Two founders mapping ideas on a bright canvas, surrounded by flowing lines that represent brand, design, and AI converging."
+      },
+      "overview": {
+        "title": "About us",
+        "tagline": "Performing systems, good vibes.",
+        "summary1": "VibePerform is a lean, founder-led team helping ambitious teams and entrepreneurs launch new ideas fast and scale smart.",
+        "summary2": "With a trusted crew of freelancers, we become your embedded team for <strong>brand, design, and AI</strong>."
+      },
+      "principles": {
+        "title": "How we work",
+        "items": [
+          "Small, senior, and fast.",
+          "Clear roles. Tight feedback loops.",
+          "Product thinking meets crisp communication.",
+          "Tools that serve humans — not the other way around."
+        ]
+      },
+      "team": {
+        "title": "Team",
+        "members": [
+          {
+            "initials": "IH",
+            "name": "Isabella Hoesch",
+            "role": "Product & Design",
+            "bio1": "Isabella helps early-stage ideas find form — fast. With a background in behavioral science and human-centered design, she brings clarity, calm, and momentum to messy moments like landing pages, presentations, and strategies.",
+            "bio2": "Previously co-founder at Codum, she now works with teams and founders to turn vision into intuitive products, championing smart tools, rapid feedback, and pragmatic delivery."
+          },
+          {
+            "initials": "MD",
+            "name": "Marlon Dietrich",
+            "role": "AI & Automation",
+            "bio1": "Marlon is our go-to for AI and workflow automation. With a software engineering background and a sharp eye for efficient systems, he turns complex challenges into useful tools.",
+            "bio2": "He believes in progress for everyone and builds technology that frees people from repetitive tasks, making the current technological revolution useful and accessible for teams of all sizes."
+          }
+        ]
+      }
+    },
+    "chatbot": {
+      "trigger": "Open AI assistant"
     }
   }
 };

@@ -100,6 +100,33 @@ function setDocumentMetadata(locale) {
   }
 }
 
+function updateHeadElements(primary, fallback) {
+  const pageKey = document.body && document.body.dataset.page ? document.body.dataset.page : "index";
+  const metaBase = `meta.${pageKey}`;
+
+  const { value: pageTitle } = resolveTranslation(`${metaBase}.title`, primary, fallback);
+  if (typeof pageTitle === "string") {
+    document.title = pageTitle;
+  }
+
+  const mappings = [
+    { selector: 'meta[name="description"]', key: "description" },
+    { selector: 'meta[property="og:title"]', key: "ogTitle" },
+    { selector: 'meta[property="og:description"]', key: "ogDescription" },
+    { selector: 'meta[name="twitter:title"]', key: "twitterTitle" },
+    { selector: 'meta[name="twitter:description"]', key: "twitterDescription" }
+  ];
+
+  mappings.forEach(({ selector, key }) => {
+    const node = document.head.querySelector(selector);
+    if (!node) return;
+    const { value } = resolveTranslation(`${metaBase}.${key}`, primary, fallback);
+    if (typeof value === "string") {
+      node.setAttribute("content", value);
+    }
+  });
+}
+
 function updateLanguageToggleUI(locale) {
   document.querySelectorAll("[data-lang-option]").forEach((button) => {
     const option = normalizeLocale(button.dataset.langOption);
@@ -124,6 +151,27 @@ function wireLanguageToggle() {
   });
 }
 
+document.addEventListener("component:site-header-ready", () => {
+  wireLanguageToggle();
+
+  if (activeLocale) {
+    applyLocale(activeLocale);
+    return;
+  }
+
+  let attempts = 0;
+  const MAX_ATTEMPTS = 10;
+
+  (function ensureLocaleReady() {
+    if (activeLocale) {
+      applyLocale(activeLocale);
+    } else if (attempts < MAX_ATTEMPTS) {
+      attempts += 1;
+      window.setTimeout(ensureLocaleReady, 50);
+    }
+  })();
+});
+
 async function applyLocale(locale) {
   const primaryData = (await loadLocaleData(locale)) || null;
   const fallbackData =
@@ -138,6 +186,14 @@ async function applyLocale(locale) {
   const fallbackSource = fallbackData;
   const resolvedSource = primaryData || fallbackData || {};
 
+  document.querySelectorAll("[data-i18n-html]").forEach((node) => {
+    const key = node.dataset.i18nHtml;
+    const { value } = resolveTranslation(key, primarySource, fallbackSource);
+    if (typeof value === "string") {
+      node.innerHTML = value;
+    }
+  });
+
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.dataset.i18n;
     const { value } = resolveTranslation(key, primarySource, fallbackSource);
@@ -151,10 +207,7 @@ async function applyLocale(locale) {
   });
 
   setDocumentMetadata(locale);
-  const { value: pageTitle } = resolveTranslation("meta.title", primarySource, fallbackSource);
-  if (typeof pageTitle === "string") {
-    document.title = pageTitle;
-  }
+  updateHeadElements(primarySource, fallbackSource);
   window.localStorage.setItem(STORAGE_KEY, locale);
   activeLocale = locale;
   updateLanguageToggleUI(locale);
